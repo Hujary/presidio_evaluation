@@ -150,9 +150,10 @@ NICHT ERKANNT (FN): 2
 
 LOC
 --------------------------------------------------------------------------------
-TP=45 | PARTIAL=1 | FN=0 | FP=0
+TP=46 | PARTIAL=0 | FN=0 | FP=0
 
-ERKANNT (TP): 45
+ERKANNT (TP): 46
+  - Dataset_08 307:319 [ner] 'München-West'
   - Dataset_13 91:108 [ner] 'Frankfurt am Main'
   - Dataset_13 244:253 [ner] 'Frankfurt'
   - Dataset_13 429:438 [ner] 'Wiesbaden'
@@ -199,15 +200,21 @@ ERKANNT (TP): 45
   - Dataset_29 464:471 [ner] 'München'
   - Dataset_30 284:294 [ner] 'Düsseldorf'
 
-NICHT VOLLSTÄNDIG ERKANNT (PARTIAL): 1
-  - Dataset_08 gold 297:319 [gold] 'Solarpark München-West' | pred LOCATION 307:319 [ner] 'München-West'
+
+LOCATION
+--------------------------------------------------------------------------------
+TP=0 | PARTIAL=0 | FN=0 | FP=2
+
+UNERWARTET (FP): 2
+  - Dataset_14 546:553 [ner] 'Münster'
+  - Dataset_16 435:439 [ner] 'Köln'
 
 
 ORG
 --------------------------------------------------------------------------------
-TP=51 | PARTIAL=0 | FN=2 | FP=0
+TP=50 | PARTIAL=0 | FN=2 | FP=0
 
-ERKANNT (TP): 51
+ERKANNT (TP): 50
   - Dataset_01 89:109 [ner] 'Berger Logistik GmbH'
   - Dataset_02 104:122 [ner] 'Kramer & Sohn GmbH'
   - Dataset_02 222:233 [ner] 'Kramer-Sued'
@@ -246,7 +253,6 @@ ERKANNT (TP): 51
   - Dataset_20 146:163 [ner] 'Urban Coffee GmbH'
   - Dataset_20 1507:1529 [ner] 'Linden Immobilien GmbH'
   - Dataset_20 1560:1577 [ner] 'Urban Coffee GmbH'
-  - Dataset_21 260:265 [ner] 'Apple'
   - Dataset_23 29:53 [ner] 'Bergmann IT-Systeme GmbH'
   - Dataset_23 2755:2779 [ner] 'Bergmann IT-Systeme GmbH'
   - Dataset_24 29:58 [ner] 'Hansen & Reuter Logistik GmbH'
@@ -265,11 +271,28 @@ NICHT ERKANNT (FN): 2
   - Dataset_16 423:439 [gold] 'Universität Köln'
 
 
+ORGANIZATION
+--------------------------------------------------------------------------------
+TP=0 | PARTIAL=0 | FN=0 | FP=10
+
+UNERWARTET (FP): 10
+  - Dataset_13 542:545 [ner] 'AWS'
+  - Dataset_16 468:484 [ner] 'Google Analytics'
+  - Dataset_18 0:2 [ner] 'FW'
+  - Dataset_19 1043:1054 [ner] 'SOLADEST600'
+  - Dataset_21 260:265 [ner] 'Apple'
+  - Dataset_25 807:813 [ner] 'mvogel'
+  - Dataset_25 815:831 [ner] 'Active Directory'
+  - Dataset_29 161:188 [ner] 'report-fin-02.spintex.local'
+  - Dataset_29 583:606 [ner] 'db-fin-02.spintex.local'
+  - Dataset_30 28:44 [ner] 'IntraLog Systems'
+
+
 PER
 --------------------------------------------------------------------------------
-TP=121 | PARTIAL=1 | FN=0 | FP=0
+TP=123 | PARTIAL=0 | FN=0 | FP=0
 
-ERKANNT (TP): 121
+ERKANNT (TP): 123
   - Dataset_01 71:81 [ner] 'Max Berger'
   - Dataset_02 84:96 [ner] 'Laura Schmid'
   - Dataset_03 300:312 [ner] 'Tobias Klein'
@@ -328,6 +351,7 @@ ERKANNT (TP): 121
   - Dataset_24 3105:3116 [ner] 'Jonas Weber'
   - Dataset_25 133:145 [ner] 'Markus Vogel'
   - Dataset_25 370:385 [ner] 'Julia Schneider'
+  - Dataset_25 411:416 [ner] 'Vogel'
   - Dataset_25 469:481 [ner] 'Markus Vogel'
   - Dataset_25 550:565 [ner] 'Julia Schneider'
   - Dataset_25 700:712 [ner] 'Markus Vogel'
@@ -361,6 +385,7 @@ ERKANNT (TP): 121
   - Dataset_28 483:495 [ner] 'Robert Klein'
   - Dataset_28 607:620 [ner] 'Miriam Scholz'
   - Dataset_28 710:722 [ner] 'Robert Klein'
+  - Dataset_28 736:742 [ner] 'Daniel'
   - Dataset_28 840:853 [ner] 'Miriam Scholz'
   - Dataset_28 947:959 [ner] 'Robert Klein'
   - Dataset_28 997:1010 [ner] 'Sabine Köhler'
@@ -392,8 +417,18 @@ ERKANNT (TP): 121
   - Dataset_30 1398:1411 [ner] 'Jana Hoffmann'
   - Dataset_30 1441:1446 [ner] 'König'
 
-NICHT VOLLSTÄNDIG ERKANNT (PARTIAL): 1
-  - Dataset_25 gold 404:415 [gold] 'Herr Vogel' | pred PERSON 411:416 [ner] 'Vogel'
+
+PHONE_NUMBER
+--------------------------------------------------------------------------------
+TP=0 | PARTIAL=0 | FN=0 | FP=6
+
+UNERWARTET (FP): 6
+  - Dataset_09 445:456 [regex] '(06.03.2024'
+  - Dataset_12 603:614 [regex] '(08.03.2024'
+  - Dataset_13 377:394 [regex] '03/2017 – 06/2021'
+  - Dataset_13 454:468 [regex] '2012 – 02/2017'
+  - Dataset_14 431:449 [regex] '(09/2019 – 01/2022'
+  - Dataset_16 253:269 [regex] '(03/2017–02/2019'
 
 
 PLZ

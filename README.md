@@ -2,8 +2,7 @@
 
 Prototypische Implementierung zur lokalen Erkennung personenbezogener Daten in Texten mit Microsoft Presidio.
 - Lokale Analyse ohne OpenAI API
-- Erkennung über Microsoft Presidio + spaCy
-- Konsolenbasierte Ausgabe gefundener Treffer
+- Erkennung über Microsoft Presidio (default) + spaCy (dependency) + Fler (German)
 
 ---
 
@@ -31,18 +30,20 @@ pip install presidio-analyzer spacy
 python -m spacy download en_core_web_lg
 ```
 
-### requirements.txt verwenden
+### requirements.txt anwenden
 ```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_lg
 ```
 
-### Script mit direktem Text ausführen
-```bash
-python presidio_detect.py --text "John Doe, john@example.com, +1 202 555 0101"
-```
 
 ### Script mit Datei ausführen
 ```bash
 python presidio_detect.py --file input.txt
-```# presidio_evaluation
+```
+
+
+### Zeitmessung ausführen
+```bash
+python presidio_runtime.py --runs 5
+```

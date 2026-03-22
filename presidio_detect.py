@@ -852,6 +852,189 @@ def format_label_report_debug(
     return "\n".join(lines).rstrip() + "\n"
 
 
+def build_label_debug_entries(
+    mapping: dict[str, list[str]],
+    debug_entries: list[DebugEntry],
+) -> dict[str, dict[str, list[DebugEntry]]]:
+    label_entries: dict[str, dict[str, list[DebugEntry]]] = {
+        label: {"TP": [], "FP/FN": [], "FN": [], "FP": []}
+        for label in sorted(mapping.keys())
+    }
+
+    for entry in debug_entries:
+        if entry.label not in label_entries:
+            label_entries[entry.label] = {"TP": [], "FP/FN": [], "FN": [], "FP": []}
+        if entry.kind in label_entries[entry.label]:
+            label_entries[entry.label][entry.kind].append(entry)
+
+    return label_entries
+
+
+def aggregate_label_counts(
+    mapping: dict[str, list[str]],
+    debug_entries: list[DebugEntry],
+) -> dict[str, dict[str, int]]:
+    label_entries = build_label_debug_entries(mapping, debug_entries)
+    out: dict[str, dict[str, int]] = {}
+
+    for label in sorted(label_entries.keys()):
+        tp_count = len(label_entries[label]["TP"])
+        partial_count = len(label_entries[label]["FP/FN"])
+        fn_count = len(label_entries[label]["FN"])
+        fp_count = len(label_entries[label]["FP"])
+
+        out[label] = {
+            "TP": tp_count,
+            "PARTIAL": partial_count,
+            "FN": fn_count,
+            "FP": fp_count,
+        }
+
+    return out
+
+
+def map_policy_name_for_ba(policy_name: str) -> str:
+    policy_norm = str(policy_name).strip().lower()
+
+    if policy_norm == "application_oriented":
+        return "application_oriented"
+
+    if policy_norm == "exact_match":
+        return "exact_match"
+
+    return policy_name
+
+
+def infer_backend_name() -> str:
+    return "flair"
+
+
+def infer_model_name() -> str:
+    return "flair/ner-german-large"
+
+
+def format_ba_summary(
+    policy_name: str,
+    global_counts: EvalCounts,
+    aggregated_label_counts: dict[str, dict[str, int]],
+    label_entries: dict[str, dict[str, list[DebugEntry]]],
+) -> str:
+    lines: list[str] = []
+
+    lines.append(f"BA SUMMARY | POLICY: {map_policy_name_for_ba(policy_name)}")
+    lines.append(f"NER_BACKEND: {infer_backend_name()}")
+    lines.append(f"NER_MODEL: {infer_model_name()}")
+    lines.append("POSTPROCESSING: off")
+    lines.append("")
+    lines.append("GESAMTERGEBNIS (micro-aggregated)")
+    lines.append("----------------------------------------------------------------------")
+    lines.append(f"TP: {global_counts.tp}")
+    lines.append(f"FP: {global_counts.fp}")
+    lines.append(f"FN: {global_counts.fn}")
+    lines.append(f"Precision: {global_counts.precision():.3f}")
+    lines.append(f"Recall: {global_counts.recall():.3f}")
+    lines.append(f"F1: {global_counts.f1():.3f}")
+    lines.append("")
+    lines.append("LABELERGEBNISSE")
+    lines.append("----------------------------------------------------------------------")
+
+    for label in sorted(aggregated_label_counts.keys()):
+        counts = aggregated_label_counts[label]
+        tp = counts["TP"]
+        fp = counts["FP"] + counts["PARTIAL"]
+        fn = counts["FN"] + counts["PARTIAL"]
+
+        precision = (tp / (tp + fp)) if (tp + fp) else 0.0
+        recall = (tp / (tp + fn)) if (tp + fn) else 0.0
+        denominator = precision + recall
+        f1 = (2.0 * precision * recall / denominator) if denominator else 0.0
+
+        lines.append(
+            f"{label:<12}"
+            f" TP={tp:>3} FP={fp:>3} FN={fn:>3} "
+            f"P={precision:.3f} R={recall:.3f} F1={f1:.3f}"
+        )
+
+    lines.append("")
+    lines.append("VERBLEIBENDE FEHLFÄLLE")
+    lines.append("----------------------------------------------------------------------")
+
+    printed_any = False
+
+    for label in sorted(label_entries.keys()):
+        partial_entries = sorted(label_entries[label]["FP/FN"], key=lambda x: (x.dataset_name, x.start, x.ende))
+        fn_entries = sorted(label_entries[label]["FN"], key=lambda x: (x.dataset_name, x.start, x.ende))
+        fp_entries = sorted(label_entries[label]["FP"], key=lambda x: (x.dataset_name, x.start, x.ende))
+
+        if not partial_entries and not fn_entries and not fp_entries:
+            continue
+
+        printed_any = True
+        lines.append(label)
+
+        if partial_entries:
+            lines.append(f"  PARTIAL ({len(partial_entries)}):")
+            for entry in partial_entries:
+                pred_source = entry.pred_source or "?"
+                pred_start = entry.pred_start if entry.pred_start is not None else -1
+                pred_ende = entry.pred_ende if entry.pred_ende is not None else -1
+                pred_text = entry.pred_text or ""
+                lines.append(
+                    f"    - {entry.dataset_name} gold:{entry.start}:{entry.ende} [gold] '{entry.text}' "
+                    f"<- pred:{pred_source}:{pred_start}:{pred_ende} '{pred_text}'"
+                )
+
+        if fn_entries:
+            lines.append(f"  FN ({len(fn_entries)}):")
+            for entry in fn_entries:
+                lines.append(
+                    f"    - {entry.dataset_name} {entry.start}:{entry.ende} [gold] '{entry.text}'"
+                )
+
+        if fp_entries:
+            lines.append(f"  FP ({len(fp_entries)}):")
+            for entry in fp_entries:
+                lines.append(
+                    f"    - {entry.dataset_name} {entry.start}:{entry.ende} [{entry.source}] '{entry.text}'"
+                )
+
+        lines.append("")
+
+    if not printed_any:
+        lines.append("Keine verbleibenden Fehlfälle.")
+
+    return "\n".join(lines).rstrip() + "\n"
+
+
+def format_ba_summary_debug(
+    policy_name: str,
+    global_counts: EvalCounts,
+    aggregated_label_counts: dict[str, dict[str, int]],
+    label_entries: dict[str, dict[str, list[DebugEntry]]],
+) -> str:
+    lines: list[str] = []
+    lines.append(format_ba_summary(policy_name, global_counts, aggregated_label_counts, label_entries).rstrip())
+    lines.append("")
+    lines.append("ROHE LABEL-ZUSTÄNDE")
+    lines.append("----------------------------------------------------------------------")
+
+    for label in sorted(label_entries.keys()):
+        tp_count = len(label_entries[label]["TP"])
+        partial_count = len(label_entries[label]["FP/FN"])
+        fn_count = len(label_entries[label]["FN"])
+        fp_count = len(label_entries[label]["FP"])
+
+        if tp_count == 0 and partial_count == 0 and fn_count == 0 and fp_count == 0:
+            continue
+
+        lines.append(
+            f"{label:<12} TP={tp_count:>3} PARTIAL={partial_count:>3} FN={fn_count:>3} FP={fp_count:>3}"
+        )
+
+    lines.append("")
+    return "\n".join(lines).rstrip() + "\n"
+
+
 def warmup(analyzer: AnalyzerEngine, warmup_text: str, mapping: dict[str, list[str]]) -> None:
     _ = detect_with_existing_analyzer_for_text(analyzer, warmup_text, mapping)
 
@@ -866,14 +1049,18 @@ def run_policy(
 ) -> None:
     default_dir = results_dir / "default"
     debug_dir = results_dir / "debug"
+    ba_dir = results_dir / "ba_results"
 
     default_dir.mkdir(parents=True, exist_ok=True)
     debug_dir.mkdir(parents=True, exist_ok=True)
+    ba_dir.mkdir(parents=True, exist_ok=True)
 
     output_path = default_dir / "Results.txt"
     label_output_path = default_dir / "Label_Results.txt"
     debug_output_path = debug_dir / "Results_debug.txt"
     label_debug_output_path = debug_dir / "Label_Results_debug.txt"
+    ba_summary_path = ba_dir / "BA_Summary.txt"
+    ba_summary_debug_path = ba_dir / "BA_Summary_debug.txt"
 
     if not gold_dir.exists():
         raise FileNotFoundError(f"Gold directory nicht gefunden: {gold_dir}")
@@ -885,6 +1072,7 @@ def run_policy(
     global_counts = EvalCounts()
     output_blocks: list[str] = []
     debug_blocks: list[str] = []
+    all_debug_entries: list[DebugEntry] = []
 
     label_entries: dict[str, dict[str, list[DebugEntry]]] = {
         label: {"TP": [], "FP/FN": [], "FN": [], "FP": []}
@@ -916,8 +1104,12 @@ def run_policy(
         global_counts.fp += counts.fp
         global_counts.fn += counts.fn
 
+        all_debug_entries.extend(debug_entries)
+
         for entry in debug_entries:
-            if entry.label in label_entries and entry.kind in label_entries[entry.label]:
+            if entry.label not in label_entries:
+                label_entries[entry.label] = {"TP": [], "FP/FN": [], "FN": [], "FP": []}
+            if entry.kind in label_entries[entry.label]:
                 label_entries[entry.label][entry.kind].append(entry)
 
         domain, _structure = dataset_meta(dataset_name)
@@ -970,10 +1162,30 @@ def run_policy(
     label_report_debug = format_label_report_debug(label_entries, policy_name=policy_name)
     label_debug_output_path.write_text(label_report_debug, encoding="utf-8")
 
+    aggregated_label_counts = aggregate_label_counts(mapping, all_debug_entries)
+
+    ba_summary = format_ba_summary(
+        policy_name=policy_name,
+        global_counts=global_counts,
+        aggregated_label_counts=aggregated_label_counts,
+        label_entries=label_entries,
+    )
+    ba_summary_path.write_text(ba_summary, encoding="utf-8")
+
+    ba_summary_debug = format_ba_summary_debug(
+        policy_name=policy_name,
+        global_counts=global_counts,
+        aggregated_label_counts=aggregated_label_counts,
+        label_entries=label_entries,
+    )
+    ba_summary_debug_path.write_text(ba_summary_debug, encoding="utf-8")
+
     print(f"Ergebnisdatei geschrieben: {output_path}")
     print(f"Label-Datei geschrieben: {label_output_path}")
     print(f"Debug-Datei geschrieben: {debug_output_path}")
     print(f"Label-Debug-Datei geschrieben: {label_debug_output_path}")
+    print(f"BA-Summary geschrieben: {ba_summary_path}")
+    print(f"BA-Summary-Debug geschrieben: {ba_summary_debug_path}")
 
 
 def main() -> None:

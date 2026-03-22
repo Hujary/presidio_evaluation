@@ -201,6 +201,15 @@ ERKANNT (TP): 46
   - Dataset_30 284:294 [ner] 'Düsseldorf'
 
 
+LOCATION
+--------------------------------------------------------------------------------
+TP=0 | PARTIAL=0 | FN=0 | FP=2
+
+UNERWARTET (FP): 2
+  - Dataset_14 546:553 [ner] 'Münster'
+  - Dataset_16 435:439 [ner] 'Köln'
+
+
 ORG
 --------------------------------------------------------------------------------
 TP=51 | PARTIAL=0 | FN=2 | FP=0
@@ -261,6 +270,22 @@ ERKANNT (TP): 51
 NICHT ERKANNT (FN): 2
   - Dataset_14 534:553 [gold] 'Universität Münster'
   - Dataset_16 423:439 [gold] 'Universität Köln'
+
+
+ORGANIZATION
+--------------------------------------------------------------------------------
+TP=0 | PARTIAL=0 | FN=0 | FP=9
+
+UNERWARTET (FP): 9
+  - Dataset_13 542:545 [ner] 'AWS'
+  - Dataset_16 468:484 [ner] 'Google Analytics'
+  - Dataset_18 0:2 [ner] 'FW'
+  - Dataset_19 1043:1054 [ner] 'SOLADEST600'
+  - Dataset_25 807:813 [ner] 'mvogel'
+  - Dataset_25 815:831 [ner] 'Active Directory'
+  - Dataset_29 161:188 [ner] 'report-fin-02.spintex.local'
+  - Dataset_29 583:606 [ner] 'db-fin-02.spintex.local'
+  - Dataset_30 28:44 [ner] 'IntraLog Systems'
 
 
 PER
@@ -392,6 +417,27 @@ ERKANNT (TP): 121
 
 NICHT VOLLSTÄNDIG ERKANNT (PARTIAL): 1
   - Dataset_25 gold 404:415 [gold] 'Herr Vogel' | pred PERSON 411:416 [ner] 'Vogel'
+
+
+PERSON
+--------------------------------------------------------------------------------
+TP=0 | PARTIAL=0 | FN=0 | FP=1
+
+UNERWARTET (FP): 1
+  - Dataset_28 736:742 [ner] 'Daniel'
+
+
+PHONE_NUMBER
+--------------------------------------------------------------------------------
+TP=0 | PARTIAL=0 | FN=0 | FP=6
+
+UNERWARTET (FP): 6
+  - Dataset_09 445:456 [regex] '(06.03.2024'
+  - Dataset_12 603:614 [regex] '(08.03.2024'
+  - Dataset_13 377:394 [regex] '03/2017 – 06/2021'
+  - Dataset_13 454:468 [regex] '2012 – 02/2017'
+  - Dataset_14 431:449 [regex] '(09/2019 – 01/2022'
+  - Dataset_16 253:269 [regex] '(03/2017–02/2019'
 
 
 PLZ

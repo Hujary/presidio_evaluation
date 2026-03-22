@@ -205,14 +205,14 @@ DATASET: Dataset_08
 DOMAIN: E-Mail
 
 POLICY exact_match
-TP=9 FP=1 FN=1 | P=0.900 R=0.900 F1=0.900
+TP=10 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
 
 TARGET LABELS
 ----------------------------------------------------------------------
 E_MAIL        5:38   'projektleitung@innoventis-gmbh.de'
 E_MAIL       43:65   'service@urbanenergy.de'
 DATUM        73:83   '05.03.2024'
-LOC         297:319  'Solarpark München-West'
+LOC         307:319  'München-West'
 PER         368:380  'Michael Roth'
 E_MAIL      391:422  'michael.roth@innoventis-gmbh.de'
 TELEFON     434:450  '+49 151 66778899'
@@ -225,7 +225,7 @@ EVALUATION
 TP      E_MAIL        5:38   'projektleitung@innoventis-gmbh.de' | pred EMAIL_ADDRESS     5:38   'projektleitung@innoventis-gmbh.de'
 TP      E_MAIL       43:65   'service@urbanenergy.de' | pred EMAIL_ADDRESS    43:65   'service@urbanenergy.de'
 TP      DATUM        73:83   '05.03.2024' | pred DATE_TIME        73:83   '05.03.2024'
-FP/FN   LOC         297:319  'Solarpark München-West' | pred LOCATION        307:319  'München-West'
+TP      LOC         307:319  'München-West' | pred LOCATION        307:319  'München-West'
 TP      PER         368:380  'Michael Roth' | pred PERSON          368:380  'Michael Roth'
 TP      E_MAIL      391:422  'michael.roth@innoventis-gmbh.de' | pred EMAIL_ADDRESS   391:422  'michael.roth@innoventis-gmbh.de'
 TP      TELEFON     434:450  '+49 151 66778899' | pred PHONE_NUMBER    434:450  '+49 151 66778899'
@@ -733,7 +733,7 @@ DATASET: Dataset_21
 DOMAIN: Verträge
 
 POLICY exact_match
-TP=13 FP=2 FN=4 | P=0.867 R=0.765 F1=0.812
+TP=12 FP=3 FN=4 | P=0.800 R=0.750 F1=0.774
 
 TARGET LABELS
 ----------------------------------------------------------------------
@@ -747,7 +747,6 @@ PLZ         148:153  '70178'
 LOC         154:163  'Stuttgart'
 PER         206:217  'Herr Berger' | ALT: 211:217 'Berger'
 PER         230:242  'Frau Hofmann' | ALT: 235:242 'Hofmann'
-ORG         260:265  'Apple'
 DATUM       989:999  '20.04.2025'
 LOC        1003:1012 'Stuttgart'
 LOC        1015:1024 'Stuttgart'
@@ -767,7 +766,7 @@ FN      PLZ         148:153  '70178'
 TP      LOC         154:163  'Stuttgart' | pred LOCATION        154:163  'Stuttgart'
 TP      PER         211:217  'Berger' | pred PERSON          211:217  'Berger'
 TP      PER         235:242  'Hofmann' | pred PERSON          235:242  'Hofmann'
-TP      ORG         260:265  'Apple' | pred ORGANIZATION    260:265  'Apple'
+FP      ORGANIZATION  260:265  'Apple'
 TP      DATUM       989:999  '20.04.2025' | pred DATE_TIME       989:999  '20.04.2025'
 TP      LOC        1003:1012 'Stuttgart' | pred LOCATION       1003:1012 'Stuttgart'
 TP      LOC        1015:1024 'Stuttgart' | pred LOCATION       1015:1024 'Stuttgart'
@@ -911,7 +910,7 @@ DATASET: Dataset_25
 DOMAIN: Chats
 
 POLICY exact_match
-TP=12 FP=4 FN=3 | P=0.750 R=0.800 F1=0.774
+TP=13 FP=3 FN=2 | P=0.812 R=0.867 F1=0.839
 
 TARGET LABELS
 ----------------------------------------------------------------------
@@ -922,7 +921,7 @@ E_MAIL      157:178  'markus.vogel@firma.de'
 TELEFON     185:197  '0711 4587321'
 STRASSE     341:359  'Tübinger Straße 54'
 PER         370:385  'Julia Schneider'
-PER         404:415  'Herr Vogel' | ALT: 409:415 'Vogel'
+PER         406:416  'Herr Vogel' | ALT: 411:416 'Vogel'
 PER         469:481  'Markus Vogel'
 PER         550:565  'Julia Schneider'
 IP_ADRESSE  615:627  '84.167.23.91'
@@ -940,7 +939,7 @@ TP      E_MAIL      157:178  'markus.vogel@firma.de' | pred EMAIL_ADDRESS   157:
 TP      TELEFON     185:197  '0711 4587321' | pred PHONE_NUMBER    185:197  '0711 4587321'
 FP/FN   STRASSE     341:359  'Tübinger Straße 54' | pred LOCATION        341:356  'Tübinger Straße'
 TP      PER         370:385  'Julia Schneider' | pred PERSON          370:385  'Julia Schneider'
-FP/FN   PER         404:415  'Herr Vogel' | pred PERSON          411:416  'Vogel'
+TP      PER         411:416  'Vogel' | pred PERSON          411:416  'Vogel'
 TP      PER         469:481  'Markus Vogel' | pred PERSON          469:481  'Markus Vogel'
 TP      PER         550:565  'Julia Schneider' | pred PERSON          550:565  'Julia Schneider'
 FN      IP_ADRESSE  615:627  '84.167.23.91'
@@ -1052,7 +1051,7 @@ DATASET: Dataset_28
 DOMAIN: Chats
 
 POLICY exact_match
-TP=21 FP=3 FN=3 | P=0.875 R=0.875 F1=0.875
+TP=22 FP=2 FN=3 | P=0.917 R=0.880 F1=0.898
 
 TARGET LABELS
 ----------------------------------------------------------------------
@@ -1071,6 +1070,7 @@ DATUM       395:405  '01.07.2025'
 PER         483:495  'Robert Klein'
 PER         607:620  'Miriam Scholz'
 PER         710:722  'Robert Klein'
+PER         736:742  'Daniel'
 STRASSE     752:765  'Rosenstraße 8'
 PLZ         767:772  '70182'
 LOC         773:782  'Stuttgart'
@@ -1098,7 +1098,7 @@ TP      DATUM       395:405  '01.07.2025' | pred DATE_TIME       395:405  '01.07
 TP      PER         483:495  'Robert Klein' | pred PERSON          483:495  'Robert Klein'
 TP      PER         607:620  'Miriam Scholz' | pred PERSON          607:620  'Miriam Scholz'
 TP      PER         710:722  'Robert Klein' | pred PERSON          710:722  'Robert Klein'
-FP      PERSON      736:742  'Daniel'
+TP      PER         736:742  'Daniel' | pred PERSON          736:742  'Daniel'
 FP/FN   STRASSE     752:765  'Rosenstraße 8' | pred LOCATION        752:763  'Rosenstraße'
 FN      PLZ         767:772  '70182'
 TP      LOC         773:782  'Stuttgart' | pred LOCATION        773:782  'Stuttgart'
@@ -1232,4 +1232,4 @@ TP      DATUM      1454:1464 '10.06.2025' | pred DATE_TIME      1454:1464 '10.06
 
 GLOBAL SUMMARY (micro-averaged over all datasets)
 ----------------------------------------------------------------------
-POLICY exact_match        | TP= 346 FP=  46 FN=  64 | P=0.883 R=0.844 F1=0.863
+POLICY exact_match        | TP= 348 FP=  44 FN=  62 | P=0.888 R=0.849 F1=0.868

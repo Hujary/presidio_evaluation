@@ -1,0 +1,150 @@
+BA SUMMARY | POLICY: exact_match
+NER_BACKEND: flair
+NER_MODEL: flair/ner-german-large
+POSTPROCESSING: off
+
+GESAMTERGEBNIS (micro-aggregated)
+----------------------------------------------------------------------
+TP: 348
+FP: 44
+FN: 62
+Precision: 0.888
+Recall: 0.849
+F1: 0.868
+
+LABELERGEBNISSE
+----------------------------------------------------------------------
+DATUM        TP= 62 FP=  0 FN= 10 P=1.000 R=0.861 F1=0.925
+E_MAIL       TP= 39 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
+IBAN         TP=  1 FP=  0 FN=  1 P=1.000 R=0.500 F1=0.667
+IP_ADRESSE   TP=  0 FP=  0 FN=  2 P=0.000 R=0.000 F1=0.000
+LOC          TP= 46 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
+LOCATION     TP=  0 FP=  2 FN=  0 P=0.000 R=0.000 F1=0.000
+ORG          TP= 50 FP=  0 FN=  2 P=1.000 R=0.962 F1=0.980
+ORGANIZATION TP=  0 FP= 10 FN=  0 P=0.000 R=0.000 F1=0.000
+PER          TP=123 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
+PHONE_NUMBER TP=  0 FP=  6 FN=  0 P=0.000 R=0.000 F1=0.000
+PLZ          TP=  0 FP=  0 FN= 21 P=0.000 R=0.000 F1=0.000
+STRASSE      TP=  0 FP= 22 FN= 22 P=0.000 R=0.000 F1=0.000
+TELEFON      TP= 19 FP=  0 FN=  1 P=1.000 R=0.950 F1=0.974
+URL          TP=  8 FP=  4 FN=  3 P=0.667 R=0.727 F1=0.696
+
+VERBLEIBENDE FEHLFÄLLE
+----------------------------------------------------------------------
+DATUM
+  FN (10):
+    - Dataset_09 446:456 [gold] '06.03.2024'
+    - Dataset_12 604:614 [gold] '08.03.2024'
+    - Dataset_13 377:384 [gold] '03/2017'
+    - Dataset_13 387:394 [gold] '06/2021'
+    - Dataset_13 451:458 [gold] '10/2012'
+    - Dataset_13 461:468 [gold] '02/2017'
+    - Dataset_14 432:439 [gold] '09/2019'
+    - Dataset_14 442:449 [gold] '01/2022'
+    - Dataset_16 254:261 [gold] '03/2017'
+    - Dataset_16 262:269 [gold] '02/2019'
+
+IBAN
+  FN (1):
+    - Dataset_19 1010:1037 [gold] 'DE91 6005 0101 2345 6789 01'
+
+IP_ADRESSE
+  FN (2):
+    - Dataset_25 615:627 [gold] '84.167.23.91'
+    - Dataset_29 611:620 [gold] '10.0.4.22'
+
+LOCATION
+  FP (2):
+    - Dataset_14 546:553 [ner] 'Münster'
+    - Dataset_16 435:439 [ner] 'Köln'
+
+ORG
+  FN (2):
+    - Dataset_14 534:553 [gold] 'Universität Münster'
+    - Dataset_16 423:439 [gold] 'Universität Köln'
+
+ORGANIZATION
+  FP (10):
+    - Dataset_13 542:545 [ner] 'AWS'
+    - Dataset_16 468:484 [ner] 'Google Analytics'
+    - Dataset_18 0:2 [ner] 'FW'
+    - Dataset_19 1043:1054 [ner] 'SOLADEST600'
+    - Dataset_21 260:265 [ner] 'Apple'
+    - Dataset_25 807:813 [ner] 'mvogel'
+    - Dataset_25 815:831 [ner] 'Active Directory'
+    - Dataset_29 161:188 [ner] 'report-fin-02.spintex.local'
+    - Dataset_29 583:606 [ner] 'db-fin-02.spintex.local'
+    - Dataset_30 28:44 [ner] 'IntraLog Systems'
+
+PHONE_NUMBER
+  FP (6):
+    - Dataset_09 445:456 [regex] '(06.03.2024'
+    - Dataset_12 603:614 [regex] '(08.03.2024'
+    - Dataset_13 377:394 [regex] '03/2017 – 06/2021'
+    - Dataset_13 454:468 [regex] '2012 – 02/2017'
+    - Dataset_14 431:449 [regex] '(09/2019 – 01/2022'
+    - Dataset_16 253:269 [regex] '(03/2017–02/2019'
+
+PLZ
+  FN (21):
+    - Dataset_13 85:90 [gold] '60313'
+    - Dataset_14 40:45 [gold] '48143'
+    - Dataset_15 226:231 [gold] '90402'
+    - Dataset_16 85:90 [gold] '50667'
+    - Dataset_18 194:199 [gold] '70563'
+    - Dataset_19 67:72 [gold] '70182'
+    - Dataset_19 152:157 [gold] '70174'
+    - Dataset_19 289:294 [gold] '70174'
+    - Dataset_20 68:73 [gold] '70173'
+    - Dataset_20 183:188 [gold] '70178'
+    - Dataset_20 399:404 [gold] '70173'
+    - Dataset_21 72:77 [gold] '70190'
+    - Dataset_21 148:153 [gold] '70178'
+    - Dataset_22 81:86 [gold] '80333'
+    - Dataset_22 155:160 [gold] '80337'
+    - Dataset_23 71:76 [gold] '70173'
+    - Dataset_23 162:167 [gold] '70178'
+    - Dataset_24 80:85 [gold] '70469'
+    - Dataset_24 218:223 [gold] '70188'
+    - Dataset_27 417:422 [gold] '20457'
+    - Dataset_28 767:772 [gold] '70182'
+
+STRASSE
+  PARTIAL (22):
+    - Dataset_14 gold:23:39 [gold] 'Bahnhofstraße 17' <- pred:ner:23:36 'Bahnhofstraße'
+    - Dataset_15 gold:213:224 [gold] 'Lindenweg 8' <- pred:ner:213:222 'Lindenweg'
+    - Dataset_19 gold:51:66 [gold] 'Uhlandstraße 19' <- pred:ner:51:63 'Uhlandstraße'
+    - Dataset_19 gold:138:151 [gold] 'Hegelstraße 7' <- pred:ner:138:149 'Hegelstraße'
+    - Dataset_19 gold:274:287 [gold] 'Hegelstraße 7' <- pred:ner:274:285 'Hegelstraße'
+    - Dataset_20 gold:53:67 [gold] 'Konigstraße 11' <- pred:ner:53:64 'Konigstraße'
+    - Dataset_20 gold:164:182 [gold] 'Tubinger Straße 42' <- pred:ner:164:179 'Tubinger Straße'
+    - Dataset_20 gold:383:397 [gold] 'Konigstraße 11' <- pred:ner:383:394 'Konigstraße'
+    - Dataset_21 gold:58:70 [gold] 'Talstraße 14' <- pred:ner:58:67 'Talstraße'
+    - Dataset_21 gold:128:146 [gold] 'Reinsburgstraße 62' <- pred:ner:128:143 'Reinsburgstraße'
+    - Dataset_22 gold:62:79 [gold] 'Augustenstraße 33' <- pred:ner:62:76 'Augustenstraße'
+    - Dataset_22 gold:135:153 [gold] 'Lindwurmstraße 115' <- pred:ner:135:149 'Lindwurmstraße'
+    - Dataset_23 gold:55:69 [gold] 'Königstraße 45' <- pred:ner:55:66 'Königstraße'
+    - Dataset_23 gold:142:160 [gold] 'Rotebühlstraße 112' <- pred:ner:142:156 'Rotebühlstraße'
+    - Dataset_24 gold:60:78 [gold] 'Industriestraße 18' <- pred:ner:60:75 'Industriestraße'
+    - Dataset_24 gold:198:216 [gold] 'Schönbühlstraße 27' <- pred:ner:198:213 'Schönbühlstraße'
+    - Dataset_25 gold:341:359 [gold] 'Tübinger Straße 54' <- pred:ner:341:356 'Tübinger Straße'
+    - Dataset_27 gold:401:415 [gold] 'Hafenstraße 12' <- pred:ner:401:412 'Hafenstraße'
+    - Dataset_28 gold:267:285 [gold] 'Industriestraße 45' <- pred:ner:267:282 'Industriestraße'
+    - Dataset_28 gold:752:765 [gold] 'Rosenstraße 8' <- pred:ner:752:763 'Rosenstraße'
+    - Dataset_29 gold:473:489 [gold] 'Leopoldstraße 23' <- pred:ner:473:486 'Leopoldstraße'
+    - Dataset_30 gold:296:314 [gold] 'Speditionstraße 21' <- pred:ner:296:311 'Speditionstraße'
+
+TELEFON
+  FN (1):
+    - Dataset_15 249:262 [gold] '0171 99887766'
+
+URL
+  PARTIAL (1):
+    - Dataset_26 gold:426:456 [gold] 'erp-test01.techsolutions.local' <- pred:regex:426:441 'erp-test01.tech'
+  FN (2):
+    - Dataset_29 161:188 [gold] 'report-fin-02.spintex.local'
+    - Dataset_29 583:606 [gold] 'db-fin-02.spintex.local'
+  FP (3):
+    - Dataset_13 469:473 [regex] 'B.Sc'
+    - Dataset_14 499:503 [regex] 'M.Sc'
+    - Dataset_15 501:505 [regex] 'B.Sc'
