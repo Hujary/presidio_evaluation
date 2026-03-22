@@ -733,7 +733,7 @@ DATASET: Dataset_21
 DOMAIN: Verträge
 
 POLICY application_oriented
-TP=15 FP=0 FN=2 | P=1.000 R=0.882 F1=0.938
+TP=14 FP=1 FN=2 | P=0.933 R=0.875 F1=0.903
 
 TARGET LABELS
 ----------------------------------------------------------------------
@@ -747,7 +747,6 @@ PLZ         148:153  '70178'
 LOC         154:163  'Stuttgart'
 PER         206:217  'Herr Berger' | ALT: 211:217 'Berger'
 PER         230:242  'Frau Hofmann' | ALT: 235:242 'Hofmann'
-ORG         260:265  'Apple'
 DATUM       989:999  '20.04.2025'
 LOC        1003:1012 'Stuttgart'
 LOC        1015:1024 'Stuttgart'
@@ -767,7 +766,7 @@ FN      PLZ         148:153  '70178'
 TP      LOC         154:163  'Stuttgart' | pred LOCATION        154:163  'Stuttgart'
 TP      PER         211:217  'Berger' | pred PERSON          211:217  'Berger'
 TP      PER         235:242  'Hofmann' | pred PERSON          235:242  'Hofmann'
-TP      ORG         260:265  'Apple' | pred ORGANIZATION    260:265  'Apple'
+FP      ORGANIZATION  260:265  'Apple'
 TP      DATUM       989:999  '20.04.2025' | pred DATE_TIME       989:999  '20.04.2025'
 TP      LOC        1003:1012 'Stuttgart' | pred LOCATION       1003:1012 'Stuttgart'
 TP      LOC        1015:1024 'Stuttgart' | pred LOCATION       1015:1024 'Stuttgart'
@@ -911,7 +910,7 @@ DATASET: Dataset_25
 DOMAIN: Chats
 
 POLICY application_oriented
-TP=13 FP=3 FN=2 | P=0.812 R=0.867 F1=0.839
+TP=14 FP=2 FN=1 | P=0.875 R=0.933 F1=0.903
 
 TARGET LABELS
 ----------------------------------------------------------------------
@@ -922,7 +921,7 @@ E_MAIL      157:178  'markus.vogel@firma.de'
 TELEFON     185:197  '0711 4587321'
 STRASSE     341:356  'Tübinger Straße' | ALT: 341:359 'Tübinger Straße 54'
 PER         370:385  'Julia Schneider'
-PER         404:415  'Herr Vogel' | ALT: 409:415 'Vogel'
+PER         406:416  'Herr Vogel' | ALT: 411:416 'Vogel'
 PER         469:481  'Markus Vogel'
 PER         550:565  'Julia Schneider'
 IP_ADRESSE  615:627  '84.167.23.91'
@@ -940,7 +939,7 @@ TP      E_MAIL      157:178  'markus.vogel@firma.de' | pred EMAIL_ADDRESS   157:
 TP      TELEFON     185:197  '0711 4587321' | pred PHONE_NUMBER    185:197  '0711 4587321'
 TP      STRASSE     341:356  'Tübinger Straße' | pred LOCATION        341:356  'Tübinger Straße'
 TP      PER         370:385  'Julia Schneider' | pred PERSON          370:385  'Julia Schneider'
-FP/FN   PER         404:415  'Herr Vogel' | pred PERSON          411:416  'Vogel'
+TP      PER         411:416  'Vogel' | pred PERSON          411:416  'Vogel'
 TP      PER         469:481  'Markus Vogel' | pred PERSON          469:481  'Markus Vogel'
 TP      PER         550:565  'Julia Schneider' | pred PERSON          550:565  'Julia Schneider'
 FN      IP_ADRESSE  615:627  '84.167.23.91'
@@ -1232,4 +1231,4 @@ TP      DATUM      1454:1464 '10.06.2025' | pred DATE_TIME      1454:1464 '10.06
 
 GLOBAL SUMMARY (micro-averaged over all datasets)
 ----------------------------------------------------------------------
-POLICY application_oriented | TP= 369 FP=  23 FN=  41 | P=0.941 R=0.900 F1=0.920
+POLICY application_oriented | TP= 369 FP=  23 FN=  40 | P=0.941 R=0.902 F1=0.921

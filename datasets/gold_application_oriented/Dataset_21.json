@@ -192,15 +192,6 @@
       ]
     },
     {
-      "label": "ORG",
-      "expected_sources": [
-        "ner"
-      ],
-      "start": 260,
-      "end": 265,
-      "text": "Apple"
-    },
-    {
       "label": "DATUM",
       "expected_sources": [
         "regex"

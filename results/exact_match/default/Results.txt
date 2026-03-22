@@ -1,0 +1,36 @@
+DATASET      | DOMAIN         | POLICY               | COUNTS                          | METRICS
+---------------------------------------------------------------------------------------------
+Dataset_01   | Supporttickets | exact_match          | TP=  6 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_02   | Supporttickets | exact_match          | TP=  8 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_03   | Supporttickets | exact_match          | TP=  7 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_04   | Supporttickets | exact_match          | TP=  6 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_05   | Supporttickets | exact_match          | TP=  8 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_06   | Supporttickets | exact_match          | TP=  8 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_07   | E-Mail         | exact_match          | TP= 13 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_08   | E-Mail         | exact_match          | TP= 10 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_09   | E-Mail         | exact_match          | TP=  7 FP=  1 FN=  1 | P=0.875 R=0.875 F1=0.875
+Dataset_10   | E-Mail         | exact_match          | TP= 10 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_11   | E-Mail         | exact_match          | TP= 14 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_12   | E-Mail         | exact_match          | TP= 11 FP=  1 FN=  1 | P=0.917 R=0.917 F1=0.917
+Dataset_13   | HR-Dokumente   | exact_match          | TP= 11 FP=  4 FN=  5 | P=0.733 R=0.688 F1=0.710
+Dataset_14   | HR-Dokumente   | exact_match          | TP= 10 FP=  4 FN=  5 | P=0.714 R=0.667 F1=0.690
+Dataset_15   | HR-Dokumente   | exact_match          | TP= 13 FP=  2 FN=  3 | P=0.867 R=0.812 F1=0.839
+Dataset_16   | HR-Dokumente   | exact_match          | TP=  8 FP=  3 FN=  4 | P=0.727 R=0.667 F1=0.696
+Dataset_17   | HR-Dokumente   | exact_match          | TP= 10 FP=  0 FN=  0 | P=1.000 R=1.000 F1=1.000
+Dataset_18   | HR-Dokumente   | exact_match          | TP= 12 FP=  1 FN=  1 | P=0.923 R=0.923 F1=0.923
+Dataset_19   | Verträge       | exact_match          | TP= 10 FP=  4 FN=  7 | P=0.714 R=0.588 F1=0.645
+Dataset_20   | Verträge       | exact_match          | TP= 13 FP=  3 FN=  6 | P=0.812 R=0.684 F1=0.743
+Dataset_21   | Verträge       | exact_match          | TP= 12 FP=  3 FN=  4 | P=0.800 R=0.750 F1=0.774
+Dataset_22   | Verträge       | exact_match          | TP= 12 FP=  2 FN=  4 | P=0.857 R=0.750 F1=0.800
+Dataset_23   | Verträge       | exact_match          | TP= 10 FP=  2 FN=  4 | P=0.833 R=0.714 F1=0.769
+Dataset_24   | Verträge       | exact_match          | TP= 12 FP=  2 FN=  4 | P=0.857 R=0.750 F1=0.800
+Dataset_25   | Chats          | exact_match          | TP= 13 FP=  3 FN=  2 | P=0.812 R=0.867 F1=0.839
+Dataset_26   | Chats          | exact_match          | TP= 13 FP=  1 FN=  1 | P=0.929 R=0.929 F1=0.929
+Dataset_27   | Chats          | exact_match          | TP= 19 FP=  1 FN=  2 | P=0.950 R=0.905 F1=0.927
+Dataset_28   | Chats          | exact_match          | TP= 22 FP=  2 FN=  3 | P=0.917 R=0.880 F1=0.898
+Dataset_29   | Chats          | exact_match          | TP= 19 FP=  3 FN=  4 | P=0.864 R=0.826 F1=0.844
+Dataset_30   | Chats          | exact_match          | TP= 21 FP=  2 FN=  1 | P=0.913 R=0.955 F1=0.933
+
+GLOBAL SUMMARY (micro-averaged over all datasets)
+----------------------------------------------------------------------
+POLICY exact_match        | TP= 348 FP=  44 FN=  62 | P=0.888 R=0.849 F1=0.868

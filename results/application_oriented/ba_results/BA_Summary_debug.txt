@@ -7,10 +7,10 @@ GESAMTERGEBNIS (micro-aggregated)
 ----------------------------------------------------------------------
 TP: 369
 FP: 23
-FN: 41
+FN: 40
 Precision: 0.941
-Recall: 0.900
-F1: 0.920
+Recall: 0.902
+F1: 0.921
 
 LABELERGEBNISSE
 ----------------------------------------------------------------------
@@ -20,9 +20,9 @@ IBAN         TP=  1 FP=  0 FN=  1 P=1.000 R=0.500 F1=0.667
 IP_ADRESSE   TP=  0 FP=  0 FN=  2 P=0.000 R=0.000 F1=0.000
 LOC          TP= 46 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
 LOCATION     TP=  0 FP=  2 FN=  0 P=0.000 R=0.000 F1=0.000
-ORG          TP= 51 FP=  0 FN=  2 P=1.000 R=0.962 F1=0.981
-ORGANIZATION TP=  0 FP=  9 FN=  0 P=0.000 R=0.000 F1=0.000
-PER          TP=121 FP=  1 FN=  1 P=0.992 R=0.992 F1=0.992
+ORG          TP= 50 FP=  0 FN=  2 P=1.000 R=0.962 F1=0.980
+ORGANIZATION TP=  0 FP= 10 FN=  0 P=0.000 R=0.000 F1=0.000
+PER          TP=122 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
 PERSON       TP=  0 FP=  1 FN=  0 P=0.000 R=0.000 F1=0.000
 PHONE_NUMBER TP=  0 FP=  6 FN=  0 P=0.000 R=0.000 F1=0.000
 PLZ          TP=  0 FP=  0 FN= 21 P=0.000 R=0.000 F1=0.000
@@ -65,20 +65,17 @@ ORG
     - Dataset_16 423:439 [gold] 'Universität Köln'
 
 ORGANIZATION
-  FP (9):
+  FP (10):
     - Dataset_13 542:545 [ner] 'AWS'
     - Dataset_16 468:484 [ner] 'Google Analytics'
     - Dataset_18 0:2 [ner] 'FW'
     - Dataset_19 1043:1054 [ner] 'SOLADEST600'
+    - Dataset_21 260:265 [ner] 'Apple'
     - Dataset_25 807:813 [ner] 'mvogel'
     - Dataset_25 815:831 [ner] 'Active Directory'
     - Dataset_29 161:188 [ner] 'report-fin-02.spintex.local'
     - Dataset_29 583:606 [ner] 'db-fin-02.spintex.local'
     - Dataset_30 28:44 [ner] 'IntraLog Systems'
-
-PER
-  PARTIAL (1):
-    - Dataset_25 gold:404:415 [gold] 'Herr Vogel' <- pred:ner:411:416 'Vogel'
 
 PERSON
   FP (1):
@@ -140,9 +137,9 @@ IBAN         TP=  1 PARTIAL=  0 FN=  1 FP=  0
 IP_ADRESSE   TP=  0 PARTIAL=  0 FN=  2 FP=  0
 LOC          TP= 46 PARTIAL=  0 FN=  0 FP=  0
 LOCATION     TP=  0 PARTIAL=  0 FN=  0 FP=  2
-ORG          TP= 51 PARTIAL=  0 FN=  2 FP=  0
-ORGANIZATION TP=  0 PARTIAL=  0 FN=  0 FP=  9
-PER          TP=121 PARTIAL=  1 FN=  0 FP=  0
+ORG          TP= 50 PARTIAL=  0 FN=  2 FP=  0
+ORGANIZATION TP=  0 PARTIAL=  0 FN=  0 FP= 10
+PER          TP=122 PARTIAL=  0 FN=  0 FP=  0
 PERSON       TP=  0 PARTIAL=  0 FN=  0 FP=  1
 PHONE_NUMBER TP=  0 PARTIAL=  0 FN=  0 FP=  6
 PLZ          TP=  0 PARTIAL=  0 FN= 21 FP=  0

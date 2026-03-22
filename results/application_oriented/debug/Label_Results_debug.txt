@@ -212,9 +212,9 @@ UNERWARTET (FP): 2
 
 ORG
 --------------------------------------------------------------------------------
-TP=51 | PARTIAL=0 | FN=2 | FP=0
+TP=50 | PARTIAL=0 | FN=2 | FP=0
 
-ERKANNT (TP): 51
+ERKANNT (TP): 50
   - Dataset_01 89:109 [ner] 'Berger Logistik GmbH'
   - Dataset_02 104:122 [ner] 'Kramer & Sohn GmbH'
   - Dataset_02 222:233 [ner] 'Kramer-Sued'
@@ -253,7 +253,6 @@ ERKANNT (TP): 51
   - Dataset_20 146:163 [ner] 'Urban Coffee GmbH'
   - Dataset_20 1507:1529 [ner] 'Linden Immobilien GmbH'
   - Dataset_20 1560:1577 [ner] 'Urban Coffee GmbH'
-  - Dataset_21 260:265 [ner] 'Apple'
   - Dataset_23 29:53 [ner] 'Bergmann IT-Systeme GmbH'
   - Dataset_23 2755:2779 [ner] 'Bergmann IT-Systeme GmbH'
   - Dataset_24 29:58 [ner] 'Hansen & Reuter Logistik GmbH'
@@ -274,13 +273,14 @@ NICHT ERKANNT (FN): 2
 
 ORGANIZATION
 --------------------------------------------------------------------------------
-TP=0 | PARTIAL=0 | FN=0 | FP=9
+TP=0 | PARTIAL=0 | FN=0 | FP=10
 
-UNERWARTET (FP): 9
+UNERWARTET (FP): 10
   - Dataset_13 542:545 [ner] 'AWS'
   - Dataset_16 468:484 [ner] 'Google Analytics'
   - Dataset_18 0:2 [ner] 'FW'
   - Dataset_19 1043:1054 [ner] 'SOLADEST600'
+  - Dataset_21 260:265 [ner] 'Apple'
   - Dataset_25 807:813 [ner] 'mvogel'
   - Dataset_25 815:831 [ner] 'Active Directory'
   - Dataset_29 161:188 [ner] 'report-fin-02.spintex.local'
@@ -290,9 +290,9 @@ UNERWARTET (FP): 9
 
 PER
 --------------------------------------------------------------------------------
-TP=121 | PARTIAL=1 | FN=0 | FP=0
+TP=122 | PARTIAL=0 | FN=0 | FP=0
 
-ERKANNT (TP): 121
+ERKANNT (TP): 122
   - Dataset_01 71:81 [ner] 'Max Berger'
   - Dataset_02 84:96 [ner] 'Laura Schmid'
   - Dataset_03 300:312 [ner] 'Tobias Klein'
@@ -351,6 +351,7 @@ ERKANNT (TP): 121
   - Dataset_24 3105:3116 [ner] 'Jonas Weber'
   - Dataset_25 133:145 [ner] 'Markus Vogel'
   - Dataset_25 370:385 [ner] 'Julia Schneider'
+  - Dataset_25 411:416 [ner] 'Vogel'
   - Dataset_25 469:481 [ner] 'Markus Vogel'
   - Dataset_25 550:565 [ner] 'Julia Schneider'
   - Dataset_25 700:712 [ner] 'Markus Vogel'
@@ -414,9 +415,6 @@ ERKANNT (TP): 121
   - Dataset_30 1277:1290 [ner] 'Markus Ritter'
   - Dataset_30 1398:1411 [ner] 'Jana Hoffmann'
   - Dataset_30 1441:1446 [ner] 'König'
-
-NICHT VOLLSTÄNDIG ERKANNT (PARTIAL): 1
-  - Dataset_25 gold 404:415 [gold] 'Herr Vogel' | pred PERSON 411:416 [ner] 'Vogel'
 
 
 PERSON

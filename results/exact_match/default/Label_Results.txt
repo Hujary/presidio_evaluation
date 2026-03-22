@@ -1,0 +1,19 @@
+LABEL REPORT | POLICY: exact_match
+--------------------------------------------------------------------------------
+
+LABEL      | TP | PARTIAL | FN | FP
+------------------------------------
+DATUM      | 62 |       0 | 10 |  0
+E_MAIL     | 39 |       0 |  0 |  0
+IBAN       |  1 |       0 |  1 |  0
+IP_ADRESSE |  0 |       0 |  2 |  0
+LOC        | 46 |       0 |  0 |  0
+LOCATION   |  0 |       0 |  0 |  2
+ORG        | 50 |       0 |  2 |  0
+ORGANIZATION |  0 |       0 |  0 | 10
+PER        | 123 |       0 |  0 |  0
+PHONE_NUMBER |  0 |       0 |  0 |  6
+PLZ        |  0 |       0 | 21 |  0
+STRASSE    |  0 |      22 |  0 |  0
+TELEFON    | 19 |       0 |  1 |  0
+URL        |  8 |       1 |  2 |  3
