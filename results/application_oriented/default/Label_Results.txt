@@ -11,8 +11,7 @@ LOC        | 46 |       0 |  0 |  0
 LOCATION   |  0 |       0 |  0 |  2
 ORG        | 50 |       0 |  2 |  0
 ORGANIZATION |  0 |       0 |  0 | 10
-PER        | 122 |       0 |  0 |  0
-PERSON     |  0 |       0 |  0 |  1
+PER        | 123 |       0 |  0 |  0
 PHONE_NUMBER |  0 |       0 |  0 |  6
 PLZ        |  0 |       0 | 21 |  0
 STRASSE    | 22 |       0 |  0 |  0

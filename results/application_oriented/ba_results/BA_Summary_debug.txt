@@ -5,12 +5,12 @@ POSTPROCESSING: off
 
 GESAMTERGEBNIS (micro-aggregated)
 ----------------------------------------------------------------------
-TP: 369
-FP: 23
+TP: 370
+FP: 22
 FN: 40
-Precision: 0.941
+Precision: 0.944
 Recall: 0.902
-F1: 0.921
+F1: 0.923
 
 LABELERGEBNISSE
 ----------------------------------------------------------------------
@@ -22,8 +22,7 @@ LOC          TP= 46 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
 LOCATION     TP=  0 FP=  2 FN=  0 P=0.000 R=0.000 F1=0.000
 ORG          TP= 50 FP=  0 FN=  2 P=1.000 R=0.962 F1=0.980
 ORGANIZATION TP=  0 FP= 10 FN=  0 P=0.000 R=0.000 F1=0.000
-PER          TP=122 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
-PERSON       TP=  0 FP=  1 FN=  0 P=0.000 R=0.000 F1=0.000
+PER          TP=123 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
 PHONE_NUMBER TP=  0 FP=  6 FN=  0 P=0.000 R=0.000 F1=0.000
 PLZ          TP=  0 FP=  0 FN= 21 P=0.000 R=0.000 F1=0.000
 STRASSE      TP= 22 FP=  0 FN=  0 P=1.000 R=1.000 F1=1.000
@@ -76,10 +75,6 @@ ORGANIZATION
     - Dataset_29 161:188 [ner] 'report-fin-02.spintex.local'
     - Dataset_29 583:606 [ner] 'db-fin-02.spintex.local'
     - Dataset_30 28:44 [ner] 'IntraLog Systems'
-
-PERSON
-  FP (1):
-    - Dataset_28 736:742 [ner] 'Daniel'
 
 PHONE_NUMBER
   FP (6):
@@ -139,8 +134,7 @@ LOC          TP= 46 PARTIAL=  0 FN=  0 FP=  0
 LOCATION     TP=  0 PARTIAL=  0 FN=  0 FP=  2
 ORG          TP= 50 PARTIAL=  0 FN=  2 FP=  0
 ORGANIZATION TP=  0 PARTIAL=  0 FN=  0 FP= 10
-PER          TP=122 PARTIAL=  0 FN=  0 FP=  0
-PERSON       TP=  0 PARTIAL=  0 FN=  0 FP=  1
+PER          TP=123 PARTIAL=  0 FN=  0 FP=  0
 PHONE_NUMBER TP=  0 PARTIAL=  0 FN=  0 FP=  6
 PLZ          TP=  0 PARTIAL=  0 FN= 21 FP=  0
 STRASSE      TP= 22 PARTIAL=  0 FN=  0 FP=  0

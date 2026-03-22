@@ -27,10 +27,10 @@ Dataset_24   | Verträge       | application_oriented | TP= 14 FP=  0 FN=  2 | P
 Dataset_25   | Chats          | application_oriented | TP= 14 FP=  2 FN=  1 | P=0.875 R=0.933 F1=0.903
 Dataset_26   | Chats          | application_oriented | TP= 13 FP=  1 FN=  1 | P=0.929 R=0.929 F1=0.929
 Dataset_27   | Chats          | application_oriented | TP= 20 FP=  0 FN=  1 | P=1.000 R=0.952 F1=0.976
-Dataset_28   | Chats          | application_oriented | TP= 23 FP=  1 FN=  1 | P=0.958 R=0.958 F1=0.958
+Dataset_28   | Chats          | application_oriented | TP= 24 FP=  0 FN=  1 | P=1.000 R=0.960 F1=0.980
 Dataset_29   | Chats          | application_oriented | TP= 20 FP=  2 FN=  3 | P=0.909 R=0.870 F1=0.889
 Dataset_30   | Chats          | application_oriented | TP= 22 FP=  1 FN=  0 | P=0.957 R=1.000 F1=0.978
 
 GLOBAL SUMMARY (micro-averaged over all datasets)
 ----------------------------------------------------------------------
-POLICY application_oriented | TP= 369 FP=  23 FN=  40 | P=0.941 R=0.902 F1=0.921
+POLICY application_oriented | TP= 370 FP=  22 FN=  40 | P=0.944 R=0.902 F1=0.923

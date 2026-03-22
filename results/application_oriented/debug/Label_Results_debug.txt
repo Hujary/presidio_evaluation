@@ -290,9 +290,9 @@ UNERWARTET (FP): 10
 
 PER
 --------------------------------------------------------------------------------
-TP=122 | PARTIAL=0 | FN=0 | FP=0
+TP=123 | PARTIAL=0 | FN=0 | FP=0
 
-ERKANNT (TP): 122
+ERKANNT (TP): 123
   - Dataset_01 71:81 [ner] 'Max Berger'
   - Dataset_02 84:96 [ner] 'Laura Schmid'
   - Dataset_03 300:312 [ner] 'Tobias Klein'
@@ -385,6 +385,7 @@ ERKANNT (TP): 122
   - Dataset_28 483:495 [ner] 'Robert Klein'
   - Dataset_28 607:620 [ner] 'Miriam Scholz'
   - Dataset_28 710:722 [ner] 'Robert Klein'
+  - Dataset_28 736:742 [ner] 'Daniel'
   - Dataset_28 840:853 [ner] 'Miriam Scholz'
   - Dataset_28 947:959 [ner] 'Robert Klein'
   - Dataset_28 997:1010 [ner] 'Sabine Köhler'
@@ -415,14 +416,6 @@ ERKANNT (TP): 122
   - Dataset_30 1277:1290 [ner] 'Markus Ritter'
   - Dataset_30 1398:1411 [ner] 'Jana Hoffmann'
   - Dataset_30 1441:1446 [ner] 'König'
-
-
-PERSON
---------------------------------------------------------------------------------
-TP=0 | PARTIAL=0 | FN=0 | FP=1
-
-UNERWARTET (FP): 1
-  - Dataset_28 736:742 [ner] 'Daniel'
 
 
 PHONE_NUMBER
