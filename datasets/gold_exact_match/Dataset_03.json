@@ -1,0 +1,68 @@
+{
+  "document_id": "Dataset_03",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 300,
+      "end": 312,
+      "text": "Tobias Klein"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 313,
+      "end": 330,
+      "text": "Klein Handel GmbH"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 331,
+      "end": 359,
+      "text": "tobias.klein@klein-handel.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 365,
+      "end": 376,
+      "text": "0751 987654"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 427,
+      "end": 437,
+      "text": "18.02.2024"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 540,
+      "end": 589,
+      "text": "https://portal.klein-handel.de/reset?token=abc123"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 657,
+      "end": 663,
+      "text": "Tobias"
+    }
+  ]
+}

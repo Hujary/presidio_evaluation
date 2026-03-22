@@ -1,0 +1,209 @@
+{
+  "document_id": "Dataset_22",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 22,
+          "end": 44,
+          "text": "Frau Katharina Schmitt",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 27,
+          "end": 44,
+          "text": "Katharina Schmitt",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 62,
+      "end": 79,
+      "text": "Augustenstraße 33"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 81,
+      "end": 86,
+      "text": "80333"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 87,
+      "end": 94,
+      "text": "München"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 100,
+          "end": 117,
+          "text": "Herrn Daniel Roth",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 106,
+          "end": 117,
+          "text": "Daniel Roth",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 135,
+      "end": 153,
+      "text": "Lindwurmstraße 115"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 155,
+      "end": 160,
+      "text": "80337"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 161,
+      "end": 168,
+      "text": "München"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 207,
+          "end": 219,
+          "text": "Frau Schmitt",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 212,
+          "end": 219,
+          "text": "Schmitt",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 232,
+          "end": 242,
+          "text": "Herrn Roth",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 238,
+          "end": 242,
+          "text": "Roth",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 939,
+      "end": 949,
+      "text": "05.05.2025"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 953,
+      "end": 960,
+      "text": "München"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 969,
+      "end": 976,
+      "text": "München"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 982,
+      "end": 992,
+      "text": "05.05.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 997,
+      "end": 1014,
+      "text": "Katharina Schmitt"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1019,
+      "end": 1030,
+      "text": "Daniel Roth"
+    }
+  ]
+}

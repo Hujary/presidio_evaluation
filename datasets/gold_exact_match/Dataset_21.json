@@ -1,0 +1,197 @@
+{
+  "document_id": "Dataset_21",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 22,
+          "end": 40,
+          "text": "Herrn Lukas Berger",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 28,
+          "end": 40,
+          "text": "Lukas Berger",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 58,
+      "end": 70,
+      "text": "Talstraße 14"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 72,
+      "end": 77,
+      "text": "70190"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 78,
+      "end": 87,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 93,
+          "end": 110,
+          "text": "Frau Nina Hofmann",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 98,
+          "end": 110,
+          "text": "Nina Hofmann",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 128,
+      "end": 146,
+      "text": "Reinsburgstraße 62"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 148,
+      "end": 153,
+      "text": "70178"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 154,
+      "end": 163,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "PER",
+      "expected_sources": ["ner"],
+      "alternatives": [
+        {
+          "start": 206,
+          "end": 217,
+          "text": "Herr Berger",
+          "expected_sources": ["ner"]
+        },
+        {
+          "start": 211,
+          "end": 217,
+          "text": "Berger",
+          "expected_sources": ["ner"]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": ["ner"],
+      "alternatives": [
+        {
+          "start": 230,
+          "end": 242,
+          "text": "Frau Hofmann",
+          "expected_sources": ["ner"]
+        },
+        {
+          "start": 235,
+          "end": 242,
+          "text": "Hofmann",
+          "expected_sources": ["ner"]
+        }
+      ]
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 989,
+      "end": 999,
+      "text": "20.04.2025"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1003,
+      "end": 1012,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1015,
+      "end": 1024,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 1030,
+      "end": 1040,
+      "text": "20.04.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1045,
+      "end": 1057,
+      "text": "Lukas Berger"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1062,
+      "end": 1074,
+      "text": "Nina Hofmann"
+    }
+  ]
+}

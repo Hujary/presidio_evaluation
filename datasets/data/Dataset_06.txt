@@ -1,0 +1,16 @@
+Betreff: Export hängt fest – CSV wird nicht erstellt
+
+Hi,
+
+ich weiß nicht, ob das nur uns betrifft, aber der Datenexport bleibt seit heute Vormittag einfach hängen. Man klickt auf „CSV exportieren“, dann dreht sich der Ladebalken ewig und irgendwann passiert gar nichts mehr.
+
+Wir sind von der CloudWare Solutions GmbH. Mein Name ist Daniel Krüger. Falls ihr reinschauen müsst: daniel.krueger@cloudware-solutions.de, mobil 0151 77889900.
+
+Ich habe es heute am 26.02.2024 gegen 09:40 Uhr mehrfach probiert, auch über einen anderen Rechner. Gestern (25.02.2024) lief noch alles normal.
+
+Login war über https://app.cloudware-solutions.de, Bereich „Reporting > Monatsübersicht“.
+
+Wäre super, wenn ihr prüfen könntet, ob da gerade ein Problem mit dem Export-Service besteht. Wir brauchen die Daten heute noch für die Abrechnung.
+
+Danke
+Daniel

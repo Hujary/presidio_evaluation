@@ -1,0 +1,186 @@
+{
+  "document_id": "Dataset_13",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 38,
+      "end": 50,
+      "text": "Daniel Weber"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 65,
+      "end": 75,
+      "text": "09.01.1991"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 85,
+      "end": 90,
+      "text": "60313"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 91,
+      "end": 108,
+      "text": "Frankfurt am Main"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 118,
+      "end": 134,
+      "text": "+49 176 77889900"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 143,
+      "end": 166,
+      "text": "daniel.weber@webmail.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 189,
+      "end": 196,
+      "text": "07/2021"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 226,
+          "end": 237,
+          "text": "DataSystems",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 226,
+          "end": 242,
+          "text": "DataSystems GmbH",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 244,
+      "end": 253,
+      "text": "Frankfurt"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 377,
+      "end": 384,
+      "text": "03/2017"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 387,
+      "end": 394,
+      "text": "06/2021"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 412,
+          "end": 424,
+          "text": "NetSolutions",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 412,
+          "end": 427,
+          "text": "NetSolutions AG",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 429,
+      "end": 438,
+      "text": "Wiesbaden"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 451,
+      "end": 458,
+      "text": "10/2012"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 461,
+      "end": 468,
+      "text": "02/2017"
+    },
+    {
+      "label": [
+        "ORG",
+        "LOC"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 486,
+      "end": 518,
+      "text": "Technische Universität Darmstadt"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "document_id": "Dataset_09",
+  "entities": [
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 5,
+      "end": 31,
+      "text": "sabine.lang@mediconnect.de"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 36,
+      "end": 53,
+      "text": "it@mediconnect.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 61,
+      "end": 71,
+      "text": "06.03.2024"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 259,
+      "end": 285,
+      "text": "sabine.lang@mediconnect.de"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 303,
+      "end": 319,
+      "text": "MediConnect GmbH"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 391,
+      "end": 403,
+      "text": "089 33445566"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 446,
+      "end": 456,
+      "text": "06.03.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 562,
+      "end": 568,
+      "text": "Sabine"
+    }
+  ]
+}

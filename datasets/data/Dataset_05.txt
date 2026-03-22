@@ -1,0 +1,18 @@
+Betreff: schon wieder Fehler beim Upload…
+
+Hallo,
+
+irgendwas stimmt mit dem Datei-Upload nicht. Ich wollte vorhin mehrere Rechnungen hochladen, aber nach ein paar Sekunden kommt nur „Upload fehlgeschlagen“. Keine genauere Meldung.
+
+Das betrifft unseren Zugang bei PixelForge Media GmbH. Ich heiße Markus Weber, vielleicht hilft das beim Nachschauen. Meine Mail ist markus.weber@pixelforge-media.de, erreichbar bin ich unter 0176 33445588.
+
+Ich hab’s heute am 24.02.2024 gegen 10:20 Uhr versucht, auch nochmal kurz vor 11 Uhr – gleiches Ergebnis. Am 23.02.2024 hat es noch funktioniert.
+
+Eingeloggt war ich ganz normal über https://portal.pixelforge-media.de.
+
+Eventuell hängt es mit der Dateigröße zusammen? Es waren PDFs mit ca. 8–10 MB.
+
+Könnt ihr bitte prüfen, ob da serverseitig etwas blockiert wird?
+
+Danke
+Markus

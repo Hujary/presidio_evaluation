@@ -1,0 +1,21 @@
+Hallo,
+
+ich komme seit heute nicht mehr in unser Kundenportal rein. Wenn ich auf „Passwort vergessen“ gehe, bekomme ich zwar die Mail, aber der Link funktioniert nicht. Es kommt nur eine 404-Seite.
+
+Wir nutzen das Portal für unsere Bestellungen, daher ist das gerade ziemlich dringend.
+
+Meine Daten:
+Tobias Klein
+Klein Handel GmbH
+tobias.klein@klein-handel.de
+Tel. 0751 987654
+
+Ich habe es heute gegen 8 Uhr mehrfach versucht (18.02.2024), auch über Firefox und einmal über Chrome – gleiches Problem.
+
+Hier der Link, der in der Mail stand:
+https://portal.klein-handel.de/reset?token=abc123
+
+Könnt ihr bitte prüfen, ob es ein generelles Problem gibt?
+
+Danke
+Tobias

@@ -1,0 +1,212 @@
+{
+  "document_id": "Dataset_29",
+  "entities": [
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 43,
+      "end": 53,
+      "text": "Spintex AG"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 61,
+      "end": 71,
+      "text": "16.05.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 81,
+      "end": 92,
+      "text": "Laura Weber"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 94,
+      "end": 116,
+      "text": "laura.weber@spintex.de"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 161,
+      "end": 188,
+      "text": "report-fin-02.spintex.local"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 281,
+      "end": 293,
+      "text": "Meyer Bau AG"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 353,
+      "end": 366,
+      "text": "Martin Keller"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 429,
+      "end": 440,
+      "text": "Laura Weber"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 464,
+      "end": 471,
+      "text": "München"
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 473,
+      "end": 489,
+      "text": "Leopoldstraße 23"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 526,
+      "end": 539,
+      "text": "Martin Keller"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 583,
+      "end": 606,
+      "text": "db-fin-02.spintex.local"
+    },
+    {
+      "label": "IP_ADRESSE",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 611,
+      "end": 620,
+      "text": "10.0.4.22"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 656,
+      "end": 667,
+      "text": "Laura Weber"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 709,
+      "end": 721,
+      "text": "Stefan Braun"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 773,
+      "end": 786,
+      "text": "Martin Keller"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 840,
+      "end": 850,
+      "text": "14.05.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 891,
+      "end": 902,
+      "text": "Laura Weber"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 998,
+      "end": 1010,
+      "text": "Thomas Meyer"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1021,
+      "end": 1034,
+      "text": "Martin Keller"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1057,
+      "end": 1070,
+      "text": "Oliver Brandt"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1108,
+      "end": 1121,
+      "text": "Martin Keller"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1198,
+      "end": 1209,
+      "text": "Laura Weber"
+    }
+  ]
+}

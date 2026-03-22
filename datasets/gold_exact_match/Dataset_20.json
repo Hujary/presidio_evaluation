@@ -1,0 +1,206 @@
+{
+  "document_id": "Dataset_20",
+  "entities": [
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 30,
+      "end": 52,
+      "text": "Linden Immobilien GmbH"
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 53,
+      "end": 67,
+      "text": "Konigstraße 11"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 68,
+      "end": 73,
+      "text": "70173"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 74,
+      "end": 83,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 121,
+          "end": 139,
+          "text": "Herrn Markus Dietz",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 127,
+          "end": 139,
+          "text": "Markus Dietz",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 146,
+      "end": 163,
+      "text": "Urban Coffee GmbH"
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 164,
+      "end": 182,
+      "text": "Tubinger Straße 42"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 183,
+      "end": 188,
+      "text": "70178"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 189,
+      "end": 198,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 238,
+          "end": 254,
+          "text": "Frau Julia Maier",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 243,
+          "end": 254,
+          "text": "Julia Maier",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 383,
+      "end": 397,
+      "text": "Konigstraße 11"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 399,
+      "end": 404,
+      "text": "70173"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 405,
+      "end": 414,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 531,
+      "end": 541,
+      "text": "01.07.2025"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1438,
+      "end": 1447,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1450,
+      "end": 1459,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 1465,
+      "end": 1475,
+      "text": "15.04.2025"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1507,
+      "end": 1529,
+      "text": "Linden Immobilien GmbH"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1560,
+      "end": 1577,
+      "text": "Urban Coffee GmbH"
+    }
+  ]
+}

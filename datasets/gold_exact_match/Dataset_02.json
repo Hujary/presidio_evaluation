@@ -1,0 +1,77 @@
+{
+  "document_id": "Dataset_02",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 84,
+      "end": 96,
+      "text": "Laura Schmid"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 104,
+      "end": 122,
+      "text": "Kramer & Sohn GmbH"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 131,
+      "end": 158,
+      "text": "laura.schmid@kramer-sohn.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 168,
+      "end": 183,
+      "text": "+49 711 4567890"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 222,
+      "end": 233,
+      "text": "Kramer-Sued"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 511,
+      "end": 539,
+      "text": "https://admin.kramer-sohn.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 671,
+      "end": 681,
+      "text": "14.02.2024"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 868,
+      "end": 878,
+      "text": "13.02.2024"
+    }
+  ]
+}

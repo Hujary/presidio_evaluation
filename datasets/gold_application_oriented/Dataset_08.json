@@ -1,0 +1,129 @@
+{
+  "document_id": "Dataset_08",
+  "entities": [
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 5,
+      "end": 38,
+      "text": "projektleitung@innoventis-gmbh.de"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 43,
+      "end": 65,
+      "text": "service@urbanenergy.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 73,
+      "end": 83,
+      "text": "05.03.2024"
+    },
+    {
+      "label": [
+        "LOC"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 297,
+          "end": 319,
+          "text": "Solarpark München-West",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 307,
+          "end": 319,
+          "text": "München-West",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 368,
+      "end": 380,
+      "text": "Michael Roth"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 391,
+      "end": 422,
+      "text": "michael.roth@innoventis-gmbh.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 434,
+      "end": 450,
+      "text": "+49 151 66778899"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 521,
+      "end": 531,
+      "text": "12.03.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 563,
+      "end": 575,
+      "text": "Michael Roth"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 595,
+          "end": 605,
+          "text": "Innoventis",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 595,
+          "end": 610,
+          "text": "Innoventis GmbH",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    }
+  ]
+}

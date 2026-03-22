@@ -1,0 +1,22 @@
+Bewerbung – Lukas Meier
+
+Sehr geehrte Damen und Herren,
+
+hiermit bewerbe ich mich auf die ausgeschriebene Stelle als Softwareentwickler.
+
+Persönliche Daten:
+Lukas Meier, geboren am 18.02.1994 in Nürnberg
+Adresse: Lindenweg 8, 90402 Nürnberg
+Telefon 0171 99887766
+E-Mail: lukas.meier@postmail.de
+
+Beruflicher Werdegang:
+Seit 04/2021 arbeite ich als Backend Developer bei der SoftTech GmbH in Nürnberg.
+Davor war ich von 01/2019 bis 03/2021 bei der ByteFactory AG als Junior Entwickler tätig.
+
+Studium:
+B.Sc. Informatik (2013–2018)
+Friedrich-Alexander-Universität Erlangen-Nürnberg
+
+Kenntnisse:
+Java, Spring Boot, REST, Docker

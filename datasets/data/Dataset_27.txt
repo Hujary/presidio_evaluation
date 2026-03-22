@@ -1,0 +1,28 @@
+Exportierter Teams-Chat
+Projekt: CRM-Datenbereinigung
+Unternehmen: NordCom Vertriebs GmbH
+Datum: 21.05.2025
+
+[10:14] Anna Keller (anna.keller@nordcom.de):
+Hallo zusammen, bei der Bereinigung der CRM-Daten sind mir doppelte Einträge zum Kunden „Bergmann Industrie AG“ aufgefallen. Kundennummern 5521 und 7783 scheinen identisch zu sein.
+
+[10:16] Lukas Reinhardt:
+Ich sehe das auch. Adresse ist jeweils Hafenstraße 12, 20457 Hamburg. Ansprechpartner ist einmal Michael Bergmann und einmal M. Bergmann.
+
+[10:18] Anna Keller:
+Genau. In einem Datensatz ist noch die alte E-Mail michael.bergmann@bergmann-industrie.de hinterlegt.
+
+[10:20] Sophie Lang (s.lang@nordcom.de):
+Bitte prüfen, welcher Datensatz mit dem Vertrag V-2023-441 verknüpft ist. Der läuft noch bis 31.12.2025.
+
+[10:22] Lukas Reinhardt:
+Vertrag ist an Kundennummer 5521 gebunden. Umsatz 2024: 184.500 EUR.
+
+[10:24] Anna Keller:
+Dann sollten wir 7783 deaktivieren und die Historie zusammenführen. Bitte auch prüfen, ob die Umsatzsteuer-ID DE289774561 identisch ist.
+
+[10:27] Sophie Lang:
+Ist identisch. Ich dokumentiere die Änderung im Protokoll CRM-Log-2025-05.
+
+[10:30] Anna Keller:
+Danke. Bitte bis morgen 12:00 Uhr abschließen, da die Auswertung für die Geschäftsführung (Thomas Neumann) vorbereitet wird.

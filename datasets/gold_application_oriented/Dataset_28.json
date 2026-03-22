@@ -1,0 +1,278 @@
+{
+  "document_id": "Dataset_28",
+  "entities": [
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 62,
+          "end": 82,
+          "text": "Helion Manufacturing",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 62,
+          "end": 87,
+          "text": "Helion Manufacturing GmbH",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 95,
+      "end": 105,
+      "text": "04.06.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 115,
+      "end": 128,
+      "text": "Miriam Scholz"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 130,
+      "end": 152,
+      "text": "m.scholz@helion-mfg.de"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 189,
+      "end": 203,
+      "text": "Daniel Fischer"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 235,
+      "end": 245,
+      "text": "01.03.2022"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 256,
+      "end": 265,
+      "text": "Stuttgart"
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 267,
+          "end": 285,
+          "text": "Industriestraße 45",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 267,
+          "end": 282,
+          "text": "Industriestraße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 296,
+      "end": 308,
+      "text": "Robert Klein"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 341,
+      "end": 348,
+      "text": "München"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 359,
+      "end": 372,
+      "text": "Miriam Scholz"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 395,
+      "end": 405,
+      "text": "01.07.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 483,
+      "end": 495,
+      "text": "Robert Klein"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 607,
+      "end": 620,
+      "text": "Miriam Scholz"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 710,
+      "end": 722,
+      "text": "Robert Klein"
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 752,
+          "end": 765,
+          "text": "Rosenstraße 8",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 752,
+          "end": 763,
+          "text": "Rosenstraße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 767,
+      "end": 772,
+      "text": "70182"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 773,
+      "end": 782,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 840,
+      "end": 853,
+      "text": "Miriam Scholz"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 907,
+      "end": 919,
+      "text": "0172 5566778"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 947,
+      "end": 959,
+      "text": "Robert Klein"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 997,
+      "end": 1010,
+      "text": "Sabine Köhler"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1040,
+      "end": 1053,
+      "text": "Miriam Scholz"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 1103,
+      "end": 1113,
+      "text": "20.06.2025"
+    }
+  ]
+}

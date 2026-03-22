@@ -1,0 +1,22 @@
+Von: julia.krause@interlog.de
+An: it-support@interlog.de
+Datum: 09.03.2024
+Betreff: FW: NL-2024-119 – schon wieder
+
+Hallo,
+
+kommt gerade wieder rein – ich kopier das unten einfach rein, weil ich ehrlich gesagt nicht mehr weiß, was davon schon gelöst wurde.
+
+Martin Schulz (NordLogistik GmbH, martin.schulz@nordlogistik.de, Tel 040 99887766) meldet weiterhin Probleme.
+
+Zitat aus seiner Mail:
+„Seit dem 02.03.2024 können wir im Portal keine Liefertermine mehr ändern, mehrere Sendungen betroffen.“
+
+Portal: https://portal.nordlogistik.de  
+Ticket-Referenz: NL-2024-119
+
+Er sagt außerdem, dass es gestern (08.03.2024) kurz funktioniert hat.
+
+Bitte prüft das dringend, Kunde ist ziemlich ungeduldig.
+
+Julia, InterLog GmbH

@@ -1,0 +1,212 @@
+{
+  "document_id": "Dataset_14",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 12,
+      "end": 23,
+      "text": "Lukas Meier"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 157,
+      "end": 168,
+      "text": "Lukas Meier"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 181,
+      "end": 191,
+      "text": "18.02.1994"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 195,
+      "end": 203,
+      "text": "Nürnberg"
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 213,
+          "end": 224,
+          "text": "Lindenweg 8",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 213,
+          "end": 222,
+          "text": "Lindenweg",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 226,
+      "end": 231,
+      "text": "90402"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 232,
+      "end": 240,
+      "text": "Nürnberg"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 249,
+      "end": 262,
+      "text": "0171 99887766"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 271,
+      "end": 294,
+      "text": "lukas.meier@postmail.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 324,
+      "end": 331,
+      "text": "04/2021"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 374,
+          "end": 382,
+          "text": "SoftTech",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 374,
+          "end": 387,
+          "text": "SoftTech GmbH",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 391,
+      "end": 399,
+      "text": "Nürnberg"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 419,
+      "end": 426,
+      "text": "01/2019"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 431,
+      "end": 438,
+      "text": "03/2021"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 447,
+      "end": 461,
+      "text": "ByteFactory AG"
+    },
+    {
+      "label": [
+        "ORG",
+        "LOC"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 530,
+          "end": 579,
+          "text": "Friedrich-Alexander-Universität Erlangen-Nürnberg",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 530,
+          "end": 561,
+          "text": "Friedrich-Alexander-Universität",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 550,
+          "end": 579,
+          "text": "Universität Erlangen-Nürnberg",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    }
+  ]
+}

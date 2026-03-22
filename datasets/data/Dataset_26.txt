@@ -1,0 +1,23 @@
+Projekt: ERP-Migration 2025
+Mandant: TechSolutions GmbH
+Projektleitung: Andreas Kühn
+
+[10:03] Andreas Kühn (andreas.kuehn@techsolutions.de):
+Statusrunde zur Datenmigration. Sabine Roth, wie weit sind wir mit den Kundendaten?
+
+[10:05] Sabine Roth (Data Engineering):
+Die Tabellen „Kunden“, „Aufträge“ und „Rechnungen“ sind exportiert. Enthalten sind u. a. Namen, Adressen, IBAN und Ansprechpartner. Testimport läuft auf Server erp-test01.techsolutions.local.
+
+[10:07] Daniel Meier (IT-Security):
+Bitte darauf achten, dass die Datei kunden_export_11052025.csv nicht unverschlüsselt per Mail versendet wird.
+
+[10:09] Sabine Roth:
+Aktuell liegt sie noch im Share unter \fileserver01\migration\2025\export.
+
+[10:12] Andreas Kühn:
+Deadline für Go-Live bleibt der 30.06.2025. Offene Punkte bitte bis Freitag 17:00 Uhr an mich melden.
+
+To-Do:
+	•	Verschlüsselung prüfen (Daniel Meier)
+	•	Stichprobenkontrolle von 50 Datensätzen (Sabine Roth)
+	•	Budget-Update an Vorstand (Andreas Kühn)

@@ -1,0 +1,77 @@
+{
+  "document_id": "Dataset_05",
+  "entities": [
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 264,
+      "end": 285,
+      "text": "PixelForge Media GmbH"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 297,
+      "end": 309,
+      "text": "Markus Weber"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 365,
+      "end": 397,
+      "text": "markus.weber@pixelforge-media.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 424,
+      "end": 437,
+      "text": "0176 33445588"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 459,
+      "end": 469,
+      "text": "24.02.2024"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 549,
+      "end": 559,
+      "text": "23.02.2024"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 623,
+      "end": 657,
+      "text": "https://portal.pixelforge-media.de"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 812,
+      "end": 818,
+      "text": "Markus"
+    }
+  ]
+}

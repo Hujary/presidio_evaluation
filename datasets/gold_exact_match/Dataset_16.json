@@ -1,0 +1,122 @@
+{
+  "document_id": "Dataset_16",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 9,
+      "end": 20,
+      "text": "Sarah Klein"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 31,
+      "end": 53,
+      "text": "sarah.klein@mailbox.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 56,
+      "end": 72,
+      "text": "+49 157 22334455"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 85,
+      "end": 90,
+      "text": "50667"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 91,
+      "end": 95,
+      "text": "Köln"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 109,
+      "end": 119,
+      "text": "03.11.1992"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 163,
+      "end": 192,
+      "text": "DoubleSlash Net-Business GmbH"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 194,
+      "end": 209,
+      "text": "Friedrichshafen"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 239,
+      "end": 252,
+      "text": "MarketView AG"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 254,
+      "end": 261,
+      "text": "03/2017"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 262,
+      "end": 269,
+      "text": "02/2019"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 423,
+          "end": 439,
+          "text": "Universität Köln",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    }
+  ]
+}

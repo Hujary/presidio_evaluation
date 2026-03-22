@@ -1,0 +1,113 @@
+{
+  "document_id": "Dataset_12",
+  "entities": [
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 5,
+      "end": 29,
+      "text": "julia.krause@interlog.de"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 34,
+      "end": 56,
+      "text": "it-support@interlog.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 64,
+      "end": 74,
+      "text": "09.03.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 258,
+      "end": 271,
+      "text": "Martin Schulz"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 273,
+      "end": 290,
+      "text": "NordLogistik GmbH"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 292,
+      "end": 321,
+      "text": "martin.schulz@nordlogistik.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 327,
+      "end": 339,
+      "text": "040 99887766"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 402,
+      "end": 412,
+      "text": "02.03.2024"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 506,
+      "end": 536,
+      "text": "https://portal.nordlogistik.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 604,
+      "end": 614,
+      "text": "08.03.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 698,
+      "end": 703,
+      "text": "Julia"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 705,
+      "end": 718,
+      "text": "InterLog GmbH"
+    }
+  ]
+}

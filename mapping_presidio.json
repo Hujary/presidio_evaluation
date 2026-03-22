@@ -1,0 +1,13 @@
+{
+  "PER": ["PERSON"],
+  "ORG": ["ORGANIZATION"],
+  "LOC": ["LOCATION"],
+  "DATUM": ["DATE_TIME"],
+  "E_MAIL": ["EMAIL_ADDRESS"],
+  "IBAN": ["IBAN_CODE"],
+  "IP_ADRESSE": ["IP_ADDRESS"],
+  "PLZ": [],
+  "TELEFON": ["PHONE_NUMBER"],
+  "URL": ["URL"],
+  "STRASSE": ["LOCATION"]
+}

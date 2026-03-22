@@ -1,0 +1,59 @@
+{
+  "document_id": "Dataset_01",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 71,
+      "end": 81,
+      "text": "Max Berger"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 89,
+      "end": 109,
+      "text": "Berger Logistik GmbH"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 118,
+      "end": 147,
+      "text": "max.berger@berger-logistik.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 157,
+      "end": 173,
+      "text": "+49 711 99887766"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 324,
+      "end": 357,
+      "text": "https://portal.berger-logistik.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 435,
+      "end": 445,
+      "text": "03.02.2024"
+    }
+  ]
+}

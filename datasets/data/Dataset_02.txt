@@ -1,0 +1,32 @@
+Betreff: Fehler 500 beim PDF-Export (Bestellungen)
+
+Ticket-ID: ST-2024-00478
+Kunde: Laura Schmid
+Firma: Kramer & Sohn GmbH
+E-Mail: laura.schmid@kramer-sohn.de
+Telefon: +49 711 4567890
+
+System: Admin-Portal v2.8.1
+Mandant: Kramer-Sued
+Betroffene Funktion: Bestellungen -> Export -> PDF
+
+Fehlerbeschreibung:
+Beim Export einer Bestellung als PDF erscheint nach ca. 3–5 Sekunden ein „HTTP 500 Internal Server Error“.
+Der Export als CSV funktioniert weiterhin.
+
+Reproduktionsschritte:
+1. Login im Admin-Portal unter https://admin.kramer-sohn.de
+2. Navigation zu „Bestellungen“
+3. Bestellung „BS-2024-1187“ öffnen
+4. „Export“ -> „PDF“ auswählen
+5. Fehler tritt auf
+
+Zeitpunkt: 14.02.2024, 16:42 Uhr
+Beispiel-Bestellnummer: BS-2024-1187
+
+Zusätzliche Hinweise:
+- Tritt bei mehreren Bestellungen auf
+- Browser: Chrome 121.0 (Windows 11)
+- Letzte erfolgreiche Ausführung war am 13.02.2024
+
+Bitte prüfen, ob der Export-Service aktuell Probleme hat.

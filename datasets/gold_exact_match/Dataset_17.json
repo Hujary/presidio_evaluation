@@ -1,0 +1,113 @@
+{
+  "document_id": "Dataset_XX",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 21,
+      "end": 34,
+      "text": "Thomas Berger"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 50,
+      "end": 77,
+      "text": "thomas.berger@bewerbung.net"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 81,
+      "end": 91,
+      "text": "04.02.2024"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 115,
+      "end": 128,
+      "text": "0160 44556677"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 162,
+      "end": 177,
+      "text": "DeltaLogix GmbH"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 246,
+      "end": 257,
+      "text": "NetPoint AG"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 282,
+      "end": 292,
+      "text": "21.08.1990"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 306,
+      "end": 313,
+      "text": "Leipzig"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 369,
+      "end": 392,
+      "text": "TechCore Solutions GmbH"
+    },
+    {
+      "label": [
+        "ORG",
+        "LOC"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 440,
+          "end": 458,
+          "text": "Hochschule Leipzig",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 306,
+          "end": 313,
+          "text": "Leipzig",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    }
+  ]
+}

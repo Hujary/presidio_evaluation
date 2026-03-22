@@ -1,0 +1,220 @@
+{
+  "document_id": "Dataset_23",
+  "entities": [
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 29,
+          "end": 48,
+          "text": "Bergmann IT-Systeme",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 29,
+          "end": 53,
+          "text": "Bergmann IT-Systeme GmbH",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 55,
+          "end": 69,
+          "text": "Königstraße 45",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 55,
+          "end": 66,
+          "text": "Königstraße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 71,
+      "end": 76,
+      "text": "70173"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 77,
+      "end": 86,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 120,
+          "end": 140,
+          "text": "Frau Laura Schneider",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 125,
+          "end": 140,
+          "text": "Laura Schneider",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 142,
+          "end": 160,
+          "text": "Rotebühlstraße 112",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 142,
+          "end": 156,
+          "text": "Rotebühlstraße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 162,
+      "end": 167,
+      "text": "70178"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 168,
+      "end": 177,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 287,
+      "end": 297,
+      "text": "01.05.2025"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 2696,
+      "end": 2722,
+      "text": "Bundesrepublik Deutschland"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 2725,
+      "end": 2734,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 2740,
+      "end": 2750,
+      "text": "18.03.2025"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 2755,
+          "end": 2774,
+          "text": "Bergmann IT-Systeme",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 2755,
+          "end": 2779,
+          "text": "Bergmann IT-Systeme GmbH",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 2784,
+      "end": 2799,
+      "text": "Laura Schneider"
+    }
+  ]
+}

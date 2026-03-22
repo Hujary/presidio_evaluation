@@ -1,0 +1,33 @@
+Channel: #it-support-muenchen
+Unternehmen: Spintex AG
+Datum: 16.05.2025
+
+[15:48] Laura Weber (laura.weber@spintex.de):
+Hallo, ich bekomme im Reporting-Dashboard report-fin-02.spintex.local seit ca. 15:40 Uhr nur noch Timeouts. Ich brauche die aktuellen Umsatzzahlen für den Kunden Meyer Bau AG (Kundennummer 9921) für ein Meeting um 16:30 Uhr.
+
+[15:50] Martin Keller (IT Operations):
+Von welchem Standort greifst du zu?
+
+[15:50] Laura Weber:
+Aus der Niederlassung München, Leopoldstraße 23. Ich bin im internen WLAN.
+
+[15:52] Martin Keller:
+Ich sehe gerade, dass der Datenbankserver db-fin-02.spintex.local (IP 10.0.4.22) bei über 95 % CPU läuft.
+
+[15:54] Laura Weber:
+Das betrifft vermutlich mehrere Nutzer? Stefan Braun meinte eben, dass sein Export auch hängt.
+
+[15:56] Martin Keller:
+Ja, mehrere Sessions offen. Letzter Neustart war am 14.05.2025. Ich prüfe die Datenbank-Last.
+
+[15:59] Laura Weber:
+Wir brauchen speziell die Zahlen für Projekt-ID PRJ-2025-118. Ansprechpartner beim Kunden ist Thomas Meyer.
+
+[16:03] Martin Keller:
+Okay. Ich informiere Oliver Brandt aus dem Infrastruktur-Team.
+
+[16:10] Martin Keller:
+Server wird neu gestartet. Kurze Unterbrechung von ca. 5 Minuten.
+
+[16:18] Laura Weber:
+Dashboard lädt wieder normal. Danke.

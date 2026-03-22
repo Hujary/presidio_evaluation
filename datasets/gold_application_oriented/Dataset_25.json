@@ -1,0 +1,175 @@
+{
+  "document_id": "Dataset_25",
+  "entities": [
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 60,
+      "end": 69,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 102,
+      "end": 123,
+      "text": "vpn01.firma-intern.de"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 133,
+      "end": 145,
+      "text": "Markus Vogel"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 157,
+      "end": 178,
+      "text": "markus.vogel@firma.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 185,
+      "end": 197,
+      "text": "0711 4587321"
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 341,
+          "end": 359,
+          "text": "Tübinger Straße 54",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 341,
+          "end": 356,
+          "text": "Tübinger Straße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 370,
+      "end": 385,
+      "text": "Julia Schneider"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 404,
+          "end": 415,
+          "text": "Herr Vogel",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 409,
+          "end": 415,
+          "text": "Vogel",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 469,
+      "end": 481,
+      "text": "Markus Vogel"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 550,
+      "end": 565,
+      "text": "Julia Schneider"
+    },
+    {
+      "label": "IP_ADRESSE",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 615,
+      "end": 627,
+      "text": "84.167.23.91"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 700,
+      "end": 712,
+      "text": "Markus Vogel"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 753,
+      "end": 768,
+      "text": "Julia Schneider"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 932,
+      "end": 947,
+      "text": "Julia Schneider"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 955,
+      "end": 965,
+      "text": "12.05.2025"
+    }
+  ]
+}

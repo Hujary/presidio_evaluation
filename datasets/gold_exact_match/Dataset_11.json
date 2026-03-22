@@ -1,0 +1,131 @@
+{
+  "document_id": "Dataset_11",
+  "entities": [
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 5,
+      "end": 34,
+      "text": "lisa.schneider@creativehub.de"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 39,
+      "end": 66,
+      "text": "markus.weber@creativehub.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 74,
+      "end": 84,
+      "text": "08.03.2024"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 107,
+      "end": 115,
+      "text": "BlueWave"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 257,
+      "end": 276,
+      "text": "BlueWave Media GmbH"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 322,
+      "end": 334,
+      "text": "Oliver Braun"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 336,
+      "end": 366,
+      "text": "oliver.braun@bluewave-media.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 409,
+      "end": 419,
+      "text": "06.03.2024"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 433,
+      "end": 443,
+      "text": "11.03.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 469,
+      "end": 481,
+      "text": "Markus Weber"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 511,
+      "end": 517,
+      "text": "Oliver"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 547,
+      "end": 559,
+      "text": "040 77889900"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 596,
+      "end": 600,
+      "text": "Lisa"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 602,
+      "end": 618,
+      "text": "CreativeHub GmbH"
+    }
+  ]
+}

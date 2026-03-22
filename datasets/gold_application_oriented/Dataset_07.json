@@ -1,0 +1,171 @@
+{
+  "document_id": "Dataset_07",
+  "entities": [
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 5,
+      "end": 28,
+      "text": "finance@alphacore-ag.de"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 33,
+      "end": 63,
+      "text": "buchhaltung@delta-logistics.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 71,
+      "end": 81,
+      "text": "04.03.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 141,
+          "end": 152,
+          "text": "Frau Berger",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 146,
+          "end": 152,
+          "text": "Berger",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 202,
+      "end": 212,
+      "text": "20.02.2024"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 282,
+      "end": 292,
+      "text": "10.03.2024"
+    },
+    {
+      "label": "IBAN",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 364,
+      "end": 386,
+      "text": "DE44500105175407324931"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 422,
+          "end": 431,
+          "text": "AlphaCore",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 422,
+          "end": 434,
+          "text": "AlphaCore AG",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 470,
+      "end": 481,
+      "text": "Daniel Vogt"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 483,
+      "end": 510,
+      "text": "daniel.vogt@alphacore-ag.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 517,
+      "end": 532,
+      "text": "+49 89 44556677"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 582,
+      "end": 593,
+      "text": "Anna Keller"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 614,
+          "end": 623,
+          "text": "AlphaCore",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 614,
+          "end": 626,
+          "text": "AlphaCore AG",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    }
+  ]
+}

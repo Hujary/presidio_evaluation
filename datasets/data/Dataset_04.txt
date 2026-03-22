@@ -1,0 +1,19 @@
+Betreff: Rückfrage zum Zugang – 2FA-Code kommt nicht an
+
+Hi Support,
+
+ich hab seit gestern Probleme beim Login ins Dashboard. Benutzername/Passwort klappt, aber danach kommt die 2FA-Abfrage und der SMS-Code kommt nicht an. Ich hab’s schon 5–6 Mal probiert, auch über LTE statt WLAN.
+
+Account: simon.franke@franke-bau.de
+Name: Simon Franke
+Firma: Franke Bau GmbH
+Telefon: +49 160 4455667
+
+Wir nutzen das Dashboard täglich für Baustellenberichte, daher ist das ziemlich dringend.
+
+Kann es sein, dass ihr gerade Probleme mit dem SMS-Gateway habt? Falls nötig kann ich auch auf Authenticator-App umstellen.
+
+Zeitpunkt: 19.02.2024 gegen 07:30 Uhr
+
+Danke euch
+Simon

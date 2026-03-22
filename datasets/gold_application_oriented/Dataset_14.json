@@ -1,0 +1,197 @@
+{
+  "document_id": "Dataset_14",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 8,
+      "end": 22,
+      "text": "Maria Hoffmann"
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 23,
+          "end": 39,
+          "text": "Bahnhofstraße 17",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 23,
+          "end": 36,
+          "text": "Bahnhofstraße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 40,
+      "end": 45,
+      "text": "48143"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 46,
+      "end": 53,
+      "text": "Münster"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 54,
+      "end": 77,
+      "text": "maria.hoffmann@email.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 85,
+      "end": 101,
+      "text": "+49 152 33445566"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 113,
+      "end": 123,
+      "text": "27.04.1996"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 247,
+      "end": 254,
+      "text": "02/2022"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 264,
+          "end": 282,
+          "text": "TechFlow Solutions",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 264,
+          "end": 285,
+          "text": "TechFlow Solutions AG",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 287,
+      "end": 294,
+      "text": "Münster"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 432,
+      "end": 439,
+      "text": "09/2019"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 442,
+      "end": 449,
+      "text": "01/2022"
+    },
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 451,
+          "end": 457,
+          "text": "CoreIT",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 451,
+          "end": 462,
+          "text": "CoreIT GmbH",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 464,
+      "end": 472,
+      "text": "Dortmund"
+    },
+    {
+      "label": [
+        "ORG",
+        "LOC"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 534,
+      "end": 553,
+      "text": "Universität Münster"
+    }
+  ]
+}

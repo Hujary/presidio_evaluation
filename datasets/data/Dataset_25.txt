@@ -1,0 +1,26 @@
+Ticket-ID: HD-2025-0731
+System: Internes Helpdesk
+Standort: Stuttgart
+Betroffenes System: VPN-Gateway vpn01.firma-intern.de
+
+[08:47] Markus Vogel (Vertrieb, markus.vogel@firma.de, Tel. 0711 4587321):
+Guten Morgen, ich komme seit heute nicht mehr per VPN ins Netz. Fehlermeldung „User authentication failed“. Ich arbeite im Homeoffice in der Tübinger Straße 54.
+
+[08:49] Julia Schneider (IT-Support):
+Hallo Herr Vogel, haben Sie Ihr Passwort kürzlich geändert?
+
+[08:50] Markus Vogel:
+Ja, gestern gegen 18:30 Uhr über das Self-Service-Portal.
+
+[08:52] Julia Schneider:
+Danke. Ich sehe mehrere Fehlversuche von der IP 84.167.23.91. Ich setze Ihr MFA-Token zurück. Bitte danach erneut anmelden.
+
+[08:57] Markus Vogel:
+Jetzt funktioniert es wieder.
+
+[08:58] Julia Schneider:
+Gut. Ich dokumentiere: Benutzerkonto mvogel, Active Directory, Passwort-Reset und MFA-Resync durchgeführt. Ticket wird geschlossen.
+
+Status: Gelöst
+Bearbeiterin: Julia Schneider
+Datum: 12.05.2025

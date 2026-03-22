@@ -1,0 +1,94 @@
+{
+  "document_id": "Dataset_06",
+  "entities": [
+    {
+      "label": [
+        "ORG"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 294,
+          "end": 313,
+          "text": "CloudWare Solutions",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 294,
+          "end": 318,
+          "text": "CloudWare Solutions GmbH",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 334,
+      "end": 347,
+      "text": "Daniel Krüger"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 378,
+      "end": 415,
+      "text": "daniel.krueger@cloudware-solutions.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 423,
+      "end": 436,
+      "text": "0151 77889900"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 460,
+      "end": 470,
+      "text": "26.02.2024"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 548,
+      "end": 558,
+      "text": "25.02.2024"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 600,
+      "end": 634,
+      "text": "https://app.cloudware-solutions.de"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 831,
+      "end": 837,
+      "text": "Daniel"
+    }
+  ]
+}

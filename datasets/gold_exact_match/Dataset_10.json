@@ -1,0 +1,95 @@
+{
+  "document_id": "Dataset_10",
+  "entities": [
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 5,
+      "end": 31,
+      "text": "thomas.reuter@logitrans.de"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 36,
+      "end": 57,
+      "text": "support@fleetcloud.io"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 65,
+      "end": 75,
+      "text": "07.03.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 268,
+      "end": 281,
+      "text": "Thomas Reuter"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 290,
+      "end": 304,
+      "text": "LogiTrans GmbH"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 306,
+      "end": 332,
+      "text": "thomas.reuter@logitrans.de"
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 339,
+      "end": 354,
+      "text": "+49 171 5566778"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 367,
+      "end": 377,
+      "text": "05.03.2024"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 450,
+      "end": 481,
+      "text": "https://dashboard.fleetcloud.io"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 561,
+      "end": 567,
+      "text": "Thomas"
+    }
+  ]
+}

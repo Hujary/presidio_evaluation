@@ -1,0 +1,140 @@
+{
+  "document_id": "Dataset_18",
+  "entities": [
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 44,
+      "end": 66,
+      "text": "hr@company-internal.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 74,
+      "end": 84,
+      "text": "12.01.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 136,
+      "end": 152,
+      "text": "Katharina Sommer"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 154,
+      "end": 178,
+      "text": "k.sommer@private-mail.de"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 194,
+      "end": 199,
+      "text": "70563"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 200,
+      "end": 209,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 246,
+      "end": 253,
+      "text": "04/2018"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 258,
+      "end": 265,
+      "text": "06/2023"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 270,
+      "end": 287,
+      "text": "AnalyticsPro GmbH"
+    },
+    {
+      "label": [
+        "ORG",
+        "LOC"
+      ],
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 424,
+          "end": 439,
+          "text": "Universität Ulm",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 436,
+          "end": 439,
+          "text": "Ulm",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "TELEFON",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 471,
+      "end": 484,
+      "text": "0151 66778899"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 589,
+      "end": 601,
+      "text": "Markus Klein"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 606,
+      "end": 620,
+      "text": "DataConsult AG"
+    }
+  ]
+}

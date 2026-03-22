@@ -1,0 +1,17 @@
+Von: thomas.reuter@logitrans.de
+An: support@fleetcloud.io
+Datum: 07.03.2024
+Betreff: Tracking-Daten fehlen teilweise
+
+Hallo Support,
+
+uns sind heute bei mehreren Fahrzeugen fehlende Tracking-Daten aufgefallen. Konkret betrifft es die IDs LT-8841 und LT-9912.
+
+Ich bin Thomas Reuter von der LogiTrans GmbH (thomas.reuter@logitrans.de, Tel. +49 171 5566778).
+
+Seit dem 05.03.2024 werden die Positionen nur unregelmäßig übertragen. Zugriff erfolgt über https://dashboard.fleetcloud.io.
+
+Bitte um kurze Rückmeldung, ob euch hierzu etwas bekannt ist.
+
+Viele Grüße  
+Thomas

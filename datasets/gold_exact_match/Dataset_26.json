@@ -1,0 +1,131 @@
+{
+  "document_id": "Dataset_25",
+  "entities": [
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 37,
+      "end": 55,
+      "text": "TechSolutions GmbH"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 72,
+      "end": 84,
+      "text": "Andreas Kühn"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 94,
+      "end": 106,
+      "text": "Andreas Kühn"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 108,
+      "end": 138,
+      "text": "andreas.kuehn@techsolutions.de"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 173,
+      "end": 184,
+      "text": "Sabine Roth"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 234,
+      "end": 245,
+      "text": "Sabine Roth"
+    },
+    {
+      "label": "URL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 426,
+      "end": 456,
+      "text": "erp-test01.techsolutions.local"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 467,
+      "end": 479,
+      "text": "Daniel Meier"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 614,
+      "end": 625,
+      "text": "Sabine Roth"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 711,
+      "end": 723,
+      "text": "Andreas Kühn"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 757,
+      "end": 767,
+      "text": "30.06.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 862,
+      "end": 874,
+      "text": "Daniel Meier"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 920,
+      "end": 931,
+      "text": "Sabine Roth"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 963,
+      "end": 975,
+      "text": "Andreas Kühn"
+    }
+  ]
+}

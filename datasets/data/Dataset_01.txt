@@ -1,0 +1,20 @@
+Betreff: Login-Fehler im Kundenportal
+
+Ticket-ID: ST-2024-00123
+Kunde: Max Berger
+Firma: Berger Logistik GmbH
+E-Mail: max.berger@berger-logistik.de
+Telefon: +49 711 99887766
+
+Produkt: Kundenportal v3.4
+Fehlerbeschreibung:
+Der Benutzer erhält beim Login die Meldung „Ungültige Sitzung“.
+
+Reproduktionsschritte:
+1. Aufruf von https://portal.berger-logistik.de
+2. Eingabe von Benutzername und Passwort
+3. Klick auf „Anmelden“
+
+Zeitpunkt: 03.02.2024, 09:15 Uhr
+
+Bitte um schnelle Prüfung, da mehrere Mitarbeiter betroffen sind.

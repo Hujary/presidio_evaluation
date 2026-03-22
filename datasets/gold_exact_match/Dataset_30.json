@@ -1,0 +1,256 @@
+{
+  "document_id": "Dataset_30",
+  "entities": [
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 85,
+      "end": 95,
+      "text": "03.06.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 105,
+      "end": 118,
+      "text": "Jana Hoffmann"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 120,
+      "end": 145,
+      "text": "jana.hoffmann@intralog.de"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 284,
+      "end": 294,
+      "text": "Düsseldorf"
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 296,
+      "end": 314,
+      "text": "Speditionstraße 21"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 325,
+      "end": 338,
+      "text": "Markus Ritter"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 366,
+      "end": 376,
+      "text": "15.04.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 454,
+      "end": 467,
+      "text": "Jana Hoffmann"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 522,
+          "end": 546,
+          "text": "Herrn Dr. Matthias König",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 528,
+          "end": 546,
+          "text": "Dr. Matthias König",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 532,
+          "end": 546,
+          "text": "Matthias König",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 663,
+      "end": 676,
+      "text": "Markus Ritter"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 839,
+      "end": 852,
+      "text": "TransLog GmbH"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 863,
+      "end": 876,
+      "text": "Jana Hoffmann"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 947,
+      "end": 960,
+      "text": "Thomas Berger"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 985,
+      "end": 995,
+      "text": "12.02.2024"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 1006,
+          "end": 1022,
+          "text": "Frau Elena Rossi",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 1011,
+          "end": 1022,
+          "text": "Elena Rossi",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1043,
+      "end": 1056,
+      "text": "Markus Ritter"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1105,
+      "end": 1113,
+      "text": "TransLog"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1142,
+      "end": 1155,
+      "text": "Jana Hoffmann"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1277,
+      "end": 1290,
+      "text": "Markus Ritter"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1398,
+      "end": 1411,
+      "text": "Jana Hoffmann"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 1437,
+          "end": 1446,
+          "text": "Dr. König",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 1441,
+          "end": 1446,
+          "text": "König",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 1454,
+      "end": 1464,
+      "text": "10.06.2025"
+    }
+  ]
+}

@@ -1,0 +1,248 @@
+{
+  "document_id": "Dataset_19",
+  "entities": [
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 31,
+          "end": 50,
+          "text": "Frau Sabine Lehmann",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 36,
+          "end": 50,
+          "text": "Sabine Lehmann",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 51,
+          "end": 66,
+          "text": "Uhlandstraße 19",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 51,
+          "end": 63,
+          "text": "Uhlandstraße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 67,
+      "end": 72,
+      "text": "70182"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 73,
+      "end": 82,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "alternatives": [
+        {
+          "start": 118,
+          "end": 137,
+          "text": "Herrn Tobias Kruger",
+          "expected_sources": [
+            "ner"
+          ]
+        },
+        {
+          "start": 124,
+          "end": 137,
+          "text": "Tobias Kruger",
+          "expected_sources": [
+            "ner"
+          ]
+        }
+      ]
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 138,
+          "end": 151,
+          "text": "Hegelstraße 7",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 138,
+          "end": 149,
+          "text": "Hegelstraße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 152,
+      "end": 157,
+      "text": "70174"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 158,
+      "end": 167,
+      "text": "Stuttgart"
+    },
+    {
+      "label": [
+        "STRASSE"
+      ],
+      "expected_sources": [
+        "ner",
+        "regex"
+      ],
+      "alternatives": [
+        {
+          "start": 274,
+          "end": 287,
+          "text": "Hegelstraße 7",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        },
+        {
+          "start": 274,
+          "end": 285,
+          "text": "Hegelstraße",
+          "expected_sources": [
+            "ner",
+            "regex"
+          ]
+        }
+      ]
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 289,
+      "end": 294,
+      "text": "70174"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 295,
+      "end": 304,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 528,
+      "end": 538,
+      "text": "01.04.2025"
+    },
+    {
+      "label": "IBAN",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 1010,
+      "end": 1037,
+      "text": "DE91 6005 0101 2345 6789 01"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1505,
+      "end": 1514,
+      "text": "Stuttgart"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 1520,
+      "end": 1530,
+      "text": "12.03.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1560,
+      "end": 1574,
+      "text": "Sabine Lehmann"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1603,
+      "end": 1616,
+      "text": "Tobias Kruger"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+Lebenslauf
+
+Persönliche Angaben
+Name: Daniel Weber
+Geburtsdatum: 09.01.1991
+Wohnort: 60313 Frankfurt am Main
+Telefon: +49 176 77889900
+E-Mail: daniel.weber@webmail.de
+
+Berufliche Stationen
+07/2021 – heute
+Senior IT-Consultant
+DataSystems GmbH, Frankfurt
+
+• Beratung im Bereich Cloud-Migration
+• Implementierung von AWS-Infrastrukturen
+• Technische Projektleitung (5 Personen)
+
+03/2017 – 06/2021
+IT-Administrator
+NetSolutions AG, Wiesbaden
+
+Ausbildung
+10/2012 – 02/2017
+B.Sc. Informatik
+Technische Universität Darmstadt
+
+Fachkenntnisse
+Cloud: AWS, Azure
+Sprachen: Python, Bash

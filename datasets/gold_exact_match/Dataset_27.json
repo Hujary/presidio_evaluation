@@ -1,0 +1,194 @@
+{
+  "document_id": "Dataset_26",
+  "entities": [
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 67,
+      "end": 89,
+      "text": "NordCom Vertriebs GmbH"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 97,
+      "end": 107,
+      "text": "21.05.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 117,
+      "end": 128,
+      "text": "Anna Keller"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 130,
+      "end": 152,
+      "text": "anna.keller@nordcom.de"
+    },
+    {
+      "label": "ORG",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 244,
+      "end": 265,
+      "text": "Bergmann Industrie AG"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 345,
+      "end": 360,
+      "text": "Lukas Reinhardt"
+    },
+    {
+      "label": "STRASSE",
+      "expected_sources": [
+        "ner", "regex"
+      ],
+      "start": 401,
+      "end": 415,
+      "text": "Hafenstraße 12"
+    },
+    {
+      "label": "PLZ",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 417,
+      "end": 422,
+      "text": "20457"
+    },
+    {
+      "label": "LOC",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 423,
+      "end": 430,
+      "text": "Hamburg"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 459,
+      "end": 475,
+      "text": "Michael Bergmann"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 487,
+      "end": 498,
+      "text": "M. Bergmann"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 509,
+      "end": 520,
+      "text": "Anna Keller"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 573,
+      "end": 611,
+      "text": "michael.bergmann@bergmann-industrie.de"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 633,
+      "end": 644,
+      "text": "Sophie Lang"
+    },
+    {
+      "label": "E_MAIL",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 646,
+      "end": 663,
+      "text": "s.lang@nordcom.de"
+    },
+    {
+      "label": "DATUM",
+      "expected_sources": [
+        "regex"
+      ],
+      "start": 759,
+      "end": 769,
+      "text": "31.12.2025"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 780,
+      "end": 795,
+      "text": "Lukas Reinhardt"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 875,
+      "end": 886,
+      "text": "Anna Keller"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1034,
+      "end": 1045,
+      "text": "Sophie Lang"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1131,
+      "end": 1142,
+      "text": "Anna Keller"
+    },
+    {
+      "label": "PER",
+      "expected_sources": [
+        "ner"
+      ],
+      "start": 1235,
+      "end": 1249,
+      "text": "Thomas Neumann"
+    }
+  ]
+}

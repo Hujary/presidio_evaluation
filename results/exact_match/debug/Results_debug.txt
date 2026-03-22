@@ -1,0 +1,1235 @@
+DATASET: Dataset_01
+DOMAIN: Supporttickets
+
+POLICY exact_match
+TP=6 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER          71:81   'Max Berger'
+ORG          89:109  'Berger Logistik GmbH'
+E_MAIL      118:147  'max.berger@berger-logistik.de'
+TELEFON     157:173  '+49 711 99887766'
+URL         324:357  'https://portal.berger-logistik.de'
+DATUM       435:445  '03.02.2024'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER          71:81   'Max Berger' | pred PERSON           71:81   'Max Berger'
+TP      ORG          89:109  'Berger Logistik GmbH' | pred ORGANIZATION     89:109  'Berger Logistik GmbH'
+TP      E_MAIL      118:147  'max.berger@berger-logistik.de' | pred EMAIL_ADDRESS   118:147  'max.berger@berger-logistik.de'
+TP      TELEFON     157:173  '+49 711 99887766' | pred PHONE_NUMBER    157:173  '+49 711 99887766'
+TP      URL         324:357  'https://portal.berger-logistik.de' | pred URL             324:357  'https://portal.berger-logistik.de'
+TP      DATUM       435:445  '03.02.2024' | pred DATE_TIME       435:445  '03.02.2024'
+
+======================================================================
+DATASET: Dataset_02
+DOMAIN: Supporttickets
+
+POLICY exact_match
+TP=8 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER          84:96   'Laura Schmid'
+ORG         104:122  'Kramer & Sohn GmbH'
+E_MAIL      131:158  'laura.schmid@kramer-sohn.de'
+TELEFON     168:183  '+49 711 4567890'
+ORG         222:233  'Kramer-Sued'
+URL         511:539  'https://admin.kramer-sohn.de'
+DATUM       671:681  '14.02.2024'
+DATUM       868:878  '13.02.2024'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER          84:96   'Laura Schmid' | pred PERSON           84:96   'Laura Schmid'
+TP      ORG         104:122  'Kramer & Sohn GmbH' | pred ORGANIZATION    104:122  'Kramer & Sohn GmbH'
+TP      E_MAIL      131:158  'laura.schmid@kramer-sohn.de' | pred EMAIL_ADDRESS   131:158  'laura.schmid@kramer-sohn.de'
+TP      TELEFON     168:183  '+49 711 4567890' | pred PHONE_NUMBER    168:183  '+49 711 4567890'
+TP      ORG         222:233  'Kramer-Sued' | pred ORGANIZATION    222:233  'Kramer-Sued'
+TP      URL         511:539  'https://admin.kramer-sohn.de' | pred URL             511:539  'https://admin.kramer-sohn.de'
+TP      DATUM       671:681  '14.02.2024' | pred DATE_TIME       671:681  '14.02.2024'
+TP      DATUM       868:878  '13.02.2024' | pred DATE_TIME       868:878  '13.02.2024'
+
+======================================================================
+DATASET: Dataset_03
+DOMAIN: Supporttickets
+
+POLICY exact_match
+TP=7 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER         300:312  'Tobias Klein'
+ORG         313:330  'Klein Handel GmbH'
+E_MAIL      331:359  'tobias.klein@klein-handel.de'
+TELEFON     365:376  '0751 987654'
+DATUM       427:437  '18.02.2024'
+URL         540:589  'https://portal.klein-handel.de/reset?token=abc123'
+PER         657:663  'Tobias'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER         300:312  'Tobias Klein' | pred PERSON          300:312  'Tobias Klein'
+TP      ORG         313:330  'Klein Handel GmbH' | pred ORGANIZATION    313:330  'Klein Handel GmbH'
+TP      E_MAIL      331:359  'tobias.klein@klein-handel.de' | pred EMAIL_ADDRESS   331:359  'tobias.klein@klein-handel.de'
+TP      TELEFON     365:376  '0751 987654' | pred PHONE_NUMBER    365:376  '0751 987654'
+TP      DATUM       427:437  '18.02.2024' | pred DATE_TIME       427:437  '18.02.2024'
+TP      URL         540:589  'https://portal.klein-handel.de/reset?token=abc123' | pred URL             540:589  'https://portal.klein-handel.de/reset?token=abc123'
+TP      PER         657:663  'Tobias' | pred PERSON          657:663  'Tobias'
+
+======================================================================
+DATASET: Dataset_04
+DOMAIN: Supporttickets
+
+POLICY exact_match
+TP=6 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+E_MAIL      293:319  'simon.franke@franke-bau.de'
+PER         326:338  'Simon Franke'
+ORG         346:361  'Franke Bau GmbH'
+TELEFON     371:386  '+49 160 4455667'
+DATUM       615:625  '19.02.2024'
+PER         654:659  'Simon'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      E_MAIL      293:319  'simon.franke@franke-bau.de' | pred EMAIL_ADDRESS   293:319  'simon.franke@franke-bau.de'
+TP      PER         326:338  'Simon Franke' | pred PERSON          326:338  'Simon Franke'
+TP      ORG         346:361  'Franke Bau GmbH' | pred ORGANIZATION    346:361  'Franke Bau GmbH'
+TP      TELEFON     371:386  '+49 160 4455667' | pred PHONE_NUMBER    371:386  '+49 160 4455667'
+TP      DATUM       615:625  '19.02.2024' | pred DATE_TIME       615:625  '19.02.2024'
+TP      PER         654:659  'Simon' | pred PERSON          654:659  'Simon'
+
+======================================================================
+DATASET: Dataset_05
+DOMAIN: Supporttickets
+
+POLICY exact_match
+TP=8 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG         264:285  'PixelForge Media GmbH'
+PER         297:309  'Markus Weber'
+E_MAIL      365:397  'markus.weber@pixelforge-media.de'
+TELEFON     424:437  '0176 33445588'
+DATUM       459:469  '24.02.2024'
+DATUM       549:559  '23.02.2024'
+URL         623:657  'https://portal.pixelforge-media.de'
+PER         812:818  'Markus'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG         264:285  'PixelForge Media GmbH' | pred ORGANIZATION    264:285  'PixelForge Media GmbH'
+TP      PER         297:309  'Markus Weber' | pred PERSON          297:309  'Markus Weber'
+TP      E_MAIL      365:397  'markus.weber@pixelforge-media.de' | pred EMAIL_ADDRESS   365:397  'markus.weber@pixelforge-media.de'
+TP      TELEFON     424:437  '0176 33445588' | pred PHONE_NUMBER    424:437  '0176 33445588'
+TP      DATUM       459:469  '24.02.2024' | pred DATE_TIME       459:469  '24.02.2024'
+TP      DATUM       549:559  '23.02.2024' | pred DATE_TIME       549:559  '23.02.2024'
+TP      URL         623:657  'https://portal.pixelforge-media.de' | pred URL             623:657  'https://portal.pixelforge-media.de'
+TP      PER         812:818  'Markus' | pred PERSON          812:818  'Markus'
+
+======================================================================
+DATASET: Dataset_06
+DOMAIN: Supporttickets
+
+POLICY exact_match
+TP=8 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG         294:318  'CloudWare Solutions GmbH'
+PER         334:347  'Daniel Krüger'
+E_MAIL      378:415  'daniel.krueger@cloudware-solutions.de'
+TELEFON     423:436  '0151 77889900'
+DATUM       460:470  '26.02.2024'
+DATUM       548:558  '25.02.2024'
+URL         600:634  'https://app.cloudware-solutions.de'
+PER         831:837  'Daniel'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG         294:318  'CloudWare Solutions GmbH' | pred ORGANIZATION    294:318  'CloudWare Solutions GmbH'
+TP      PER         334:347  'Daniel Krüger' | pred PERSON          334:347  'Daniel Krüger'
+TP      E_MAIL      378:415  'daniel.krueger@cloudware-solutions.de' | pred EMAIL_ADDRESS   378:415  'daniel.krueger@cloudware-solutions.de'
+TP      TELEFON     423:436  '0151 77889900' | pred PHONE_NUMBER    423:436  '0151 77889900'
+TP      DATUM       460:470  '26.02.2024' | pred DATE_TIME       460:470  '26.02.2024'
+TP      DATUM       548:558  '25.02.2024' | pred DATE_TIME       548:558  '25.02.2024'
+TP      URL         600:634  'https://app.cloudware-solutions.de' | pred URL             600:634  'https://app.cloudware-solutions.de'
+TP      PER         831:837  'Daniel' | pred PERSON          831:837  'Daniel'
+
+======================================================================
+DATASET: Dataset_07
+DOMAIN: E-Mail
+
+POLICY exact_match
+TP=13 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+E_MAIL        5:28   'finance@alphacore-ag.de'
+E_MAIL       33:63   'buchhaltung@delta-logistics.de'
+DATUM        71:81   '04.03.2024'
+PER         141:152  'Frau Berger' | ALT: 146:152 'Berger'
+DATUM       202:212  '20.02.2024'
+DATUM       282:292  '10.03.2024'
+IBAN        364:386  'DE44500105175407324931'
+ORG         422:434  'AlphaCore AG'
+PER         470:481  'Daniel Vogt'
+E_MAIL      483:510  'daniel.vogt@alphacore-ag.de'
+TELEFON     517:532  '+49 89 44556677'
+PER         582:593  'Anna Keller'
+ORG         614:626  'AlphaCore AG'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      E_MAIL        5:28   'finance@alphacore-ag.de' | pred EMAIL_ADDRESS     5:28   'finance@alphacore-ag.de'
+TP      E_MAIL       33:63   'buchhaltung@delta-logistics.de' | pred EMAIL_ADDRESS    33:63   'buchhaltung@delta-logistics.de'
+TP      DATUM        71:81   '04.03.2024' | pred DATE_TIME        71:81   '04.03.2024'
+TP      PER         146:152  'Berger' | pred PERSON          146:152  'Berger'
+TP      DATUM       202:212  '20.02.2024' | pred DATE_TIME       202:212  '20.02.2024'
+TP      DATUM       282:292  '10.03.2024' | pred DATE_TIME       282:292  '10.03.2024'
+TP      IBAN        364:386  'DE44500105175407324931' | pred IBAN_CODE       364:386  'DE44500105175407324931'
+TP      ORG         422:434  'AlphaCore AG' | pred ORGANIZATION    422:434  'AlphaCore AG'
+TP      PER         470:481  'Daniel Vogt' | pred PERSON          470:481  'Daniel Vogt'
+TP      E_MAIL      483:510  'daniel.vogt@alphacore-ag.de' | pred EMAIL_ADDRESS   483:510  'daniel.vogt@alphacore-ag.de'
+TP      TELEFON     517:532  '+49 89 44556677' | pred PHONE_NUMBER    517:532  '+49 89 44556677'
+TP      PER         582:593  'Anna Keller' | pred PERSON          582:593  'Anna Keller'
+TP      ORG         614:626  'AlphaCore AG' | pred ORGANIZATION    614:626  'AlphaCore AG'
+
+======================================================================
+DATASET: Dataset_08
+DOMAIN: E-Mail
+
+POLICY exact_match
+TP=9 FP=1 FN=1 | P=0.900 R=0.900 F1=0.900
+
+TARGET LABELS
+----------------------------------------------------------------------
+E_MAIL        5:38   'projektleitung@innoventis-gmbh.de'
+E_MAIL       43:65   'service@urbanenergy.de'
+DATUM        73:83   '05.03.2024'
+LOC         297:319  'Solarpark München-West'
+PER         368:380  'Michael Roth'
+E_MAIL      391:422  'michael.roth@innoventis-gmbh.de'
+TELEFON     434:450  '+49 151 66778899'
+DATUM       521:531  '12.03.2024'
+PER         563:575  'Michael Roth'
+ORG         595:610  'Innoventis GmbH'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      E_MAIL        5:38   'projektleitung@innoventis-gmbh.de' | pred EMAIL_ADDRESS     5:38   'projektleitung@innoventis-gmbh.de'
+TP      E_MAIL       43:65   'service@urbanenergy.de' | pred EMAIL_ADDRESS    43:65   'service@urbanenergy.de'
+TP      DATUM        73:83   '05.03.2024' | pred DATE_TIME        73:83   '05.03.2024'
+FP/FN   LOC         297:319  'Solarpark München-West' | pred LOCATION        307:319  'München-West'
+TP      PER         368:380  'Michael Roth' | pred PERSON          368:380  'Michael Roth'
+TP      E_MAIL      391:422  'michael.roth@innoventis-gmbh.de' | pred EMAIL_ADDRESS   391:422  'michael.roth@innoventis-gmbh.de'
+TP      TELEFON     434:450  '+49 151 66778899' | pred PHONE_NUMBER    434:450  '+49 151 66778899'
+TP      DATUM       521:531  '12.03.2024' | pred DATE_TIME       521:531  '12.03.2024'
+TP      PER         563:575  'Michael Roth' | pred PERSON          563:575  'Michael Roth'
+TP      ORG         595:610  'Innoventis GmbH' | pred ORGANIZATION    595:610  'Innoventis GmbH'
+
+======================================================================
+DATASET: Dataset_09
+DOMAIN: E-Mail
+
+POLICY exact_match
+TP=7 FP=1 FN=1 | P=0.875 R=0.875 F1=0.875
+
+TARGET LABELS
+----------------------------------------------------------------------
+E_MAIL        5:31   'sabine.lang@mediconnect.de'
+E_MAIL       36:53   'it@mediconnect.de'
+DATUM        61:71   '06.03.2024'
+E_MAIL      259:285  'sabine.lang@mediconnect.de'
+ORG         303:319  'MediConnect GmbH'
+TELEFON     391:403  '089 33445566'
+DATUM       446:456  '06.03.2024'
+PER         562:568  'Sabine'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      E_MAIL        5:31   'sabine.lang@mediconnect.de' | pred EMAIL_ADDRESS     5:31   'sabine.lang@mediconnect.de'
+TP      E_MAIL       36:53   'it@mediconnect.de' | pred EMAIL_ADDRESS    36:53   'it@mediconnect.de'
+TP      DATUM        61:71   '06.03.2024' | pred DATE_TIME        61:71   '06.03.2024'
+TP      E_MAIL      259:285  'sabine.lang@mediconnect.de' | pred EMAIL_ADDRESS   259:285  'sabine.lang@mediconnect.de'
+TP      ORG         303:319  'MediConnect GmbH' | pred ORGANIZATION    303:319  'MediConnect GmbH'
+TP      TELEFON     391:403  '089 33445566' | pred PHONE_NUMBER    391:403  '089 33445566'
+FP      PHONE_NUMBER  445:456  '(06.03.2024'
+FN      DATUM       446:456  '06.03.2024'
+TP      PER         562:568  'Sabine' | pred PERSON          562:568  'Sabine'
+
+======================================================================
+DATASET: Dataset_10
+DOMAIN: E-Mail
+
+POLICY exact_match
+TP=10 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+E_MAIL        5:31   'thomas.reuter@logitrans.de'
+E_MAIL       36:57   'support@fleetcloud.io'
+DATUM        65:75   '07.03.2024'
+PER         268:281  'Thomas Reuter'
+ORG         290:304  'LogiTrans GmbH'
+E_MAIL      306:332  'thomas.reuter@logitrans.de'
+TELEFON     339:354  '+49 171 5566778'
+DATUM       367:377  '05.03.2024'
+URL         450:481  'https://dashboard.fleetcloud.io'
+PER         561:567  'Thomas'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      E_MAIL        5:31   'thomas.reuter@logitrans.de' | pred EMAIL_ADDRESS     5:31   'thomas.reuter@logitrans.de'
+TP      E_MAIL       36:57   'support@fleetcloud.io' | pred EMAIL_ADDRESS    36:57   'support@fleetcloud.io'
+TP      DATUM        65:75   '07.03.2024' | pred DATE_TIME        65:75   '07.03.2024'
+TP      PER         268:281  'Thomas Reuter' | pred PERSON          268:281  'Thomas Reuter'
+TP      ORG         290:304  'LogiTrans GmbH' | pred ORGANIZATION    290:304  'LogiTrans GmbH'
+TP      E_MAIL      306:332  'thomas.reuter@logitrans.de' | pred EMAIL_ADDRESS   306:332  'thomas.reuter@logitrans.de'
+TP      TELEFON     339:354  '+49 171 5566778' | pred PHONE_NUMBER    339:354  '+49 171 5566778'
+TP      DATUM       367:377  '05.03.2024' | pred DATE_TIME       367:377  '05.03.2024'
+TP      URL         450:481  'https://dashboard.fleetcloud.io' | pred URL             450:481  'https://dashboard.fleetcloud.io'
+TP      PER         561:567  'Thomas' | pred PERSON          561:567  'Thomas'
+
+======================================================================
+DATASET: Dataset_11
+DOMAIN: E-Mail
+
+POLICY exact_match
+TP=14 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+E_MAIL        5:34   'lisa.schneider@creativehub.de'
+E_MAIL       39:66   'markus.weber@creativehub.de'
+DATUM        74:84   '08.03.2024'
+ORG         107:115  'BlueWave'
+ORG         257:276  'BlueWave Media GmbH'
+PER         322:334  'Oliver Braun'
+E_MAIL      336:366  'oliver.braun@bluewave-media.de'
+DATUM       409:419  '06.03.2024'
+DATUM       433:443  '11.03.2024'
+PER         469:481  'Markus Weber'
+PER         511:517  'Oliver'
+TELEFON     547:559  '040 77889900'
+PER         596:600  'Lisa'
+ORG         602:618  'CreativeHub GmbH'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      E_MAIL        5:34   'lisa.schneider@creativehub.de' | pred EMAIL_ADDRESS     5:34   'lisa.schneider@creativehub.de'
+TP      E_MAIL       39:66   'markus.weber@creativehub.de' | pred EMAIL_ADDRESS    39:66   'markus.weber@creativehub.de'
+TP      DATUM        74:84   '08.03.2024' | pred DATE_TIME        74:84   '08.03.2024'
+TP      ORG         107:115  'BlueWave' | pred ORGANIZATION    107:115  'BlueWave'
+TP      ORG         257:276  'BlueWave Media GmbH' | pred ORGANIZATION    257:276  'BlueWave Media GmbH'
+TP      PER         322:334  'Oliver Braun' | pred PERSON          322:334  'Oliver Braun'
+TP      E_MAIL      336:366  'oliver.braun@bluewave-media.de' | pred EMAIL_ADDRESS   336:366  'oliver.braun@bluewave-media.de'
+TP      DATUM       409:419  '06.03.2024' | pred DATE_TIME       409:419  '06.03.2024'
+TP      DATUM       433:443  '11.03.2024' | pred DATE_TIME       433:443  '11.03.2024'
+TP      PER         469:481  'Markus Weber' | pred PERSON          469:481  'Markus Weber'
+TP      PER         511:517  'Oliver' | pred PERSON          511:517  'Oliver'
+TP      TELEFON     547:559  '040 77889900' | pred PHONE_NUMBER    547:559  '040 77889900'
+TP      PER         596:600  'Lisa' | pred PERSON          596:600  'Lisa'
+TP      ORG         602:618  'CreativeHub GmbH' | pred ORGANIZATION    602:618  'CreativeHub GmbH'
+
+======================================================================
+DATASET: Dataset_12
+DOMAIN: E-Mail
+
+POLICY exact_match
+TP=11 FP=1 FN=1 | P=0.917 R=0.917 F1=0.917
+
+TARGET LABELS
+----------------------------------------------------------------------
+E_MAIL        5:29   'julia.krause@interlog.de'
+E_MAIL       34:56   'it-support@interlog.de'
+DATUM        64:74   '09.03.2024'
+PER         258:271  'Martin Schulz'
+ORG         273:290  'NordLogistik GmbH'
+E_MAIL      292:321  'martin.schulz@nordlogistik.de'
+TELEFON     327:339  '040 99887766'
+DATUM       402:412  '02.03.2024'
+URL         506:536  'https://portal.nordlogistik.de'
+DATUM       604:614  '08.03.2024'
+PER         698:703  'Julia'
+ORG         705:718  'InterLog GmbH'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      E_MAIL        5:29   'julia.krause@interlog.de' | pred EMAIL_ADDRESS     5:29   'julia.krause@interlog.de'
+TP      E_MAIL       34:56   'it-support@interlog.de' | pred EMAIL_ADDRESS    34:56   'it-support@interlog.de'
+TP      DATUM        64:74   '09.03.2024' | pred DATE_TIME        64:74   '09.03.2024'
+TP      PER         258:271  'Martin Schulz' | pred PERSON          258:271  'Martin Schulz'
+TP      ORG         273:290  'NordLogistik GmbH' | pred ORGANIZATION    273:290  'NordLogistik GmbH'
+TP      E_MAIL      292:321  'martin.schulz@nordlogistik.de' | pred EMAIL_ADDRESS   292:321  'martin.schulz@nordlogistik.de'
+TP      TELEFON     327:339  '040 99887766' | pred PHONE_NUMBER    327:339  '040 99887766'
+TP      DATUM       402:412  '02.03.2024' | pred DATE_TIME       402:412  '02.03.2024'
+TP      URL         506:536  'https://portal.nordlogistik.de' | pred URL             506:536  'https://portal.nordlogistik.de'
+FP      PHONE_NUMBER  603:614  '(08.03.2024'
+FN      DATUM       604:614  '08.03.2024'
+TP      PER         698:703  'Julia' | pred PERSON          698:703  'Julia'
+TP      ORG         705:718  'InterLog GmbH' | pred ORGANIZATION    705:718  'InterLog GmbH'
+
+======================================================================
+DATASET: Dataset_13
+DOMAIN: HR-Dokumente
+
+POLICY exact_match
+TP=11 FP=4 FN=5 | P=0.733 R=0.688 F1=0.710
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER          38:50   'Daniel Weber'
+DATUM        65:75   '09.01.1991'
+PLZ          85:90   '60313'
+LOC          91:108  'Frankfurt am Main'
+TELEFON     118:134  '+49 176 77889900'
+E_MAIL      143:166  'daniel.weber@webmail.de'
+DATUM       189:196  '07/2021'
+ORG         226:242  'DataSystems GmbH'
+LOC         244:253  'Frankfurt'
+DATUM       377:384  '03/2017'
+DATUM       387:394  '06/2021'
+ORG         412:427  'NetSolutions AG'
+LOC         429:438  'Wiesbaden'
+DATUM       451:458  '10/2012'
+DATUM       461:468  '02/2017'
+ORG         486:518  'Technische Universität Darmstadt'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER          38:50   'Daniel Weber' | pred PERSON           38:50   'Daniel Weber'
+TP      DATUM        65:75   '09.01.1991' | pred DATE_TIME        65:75   '09.01.1991'
+FN      PLZ          85:90   '60313'
+TP      LOC          91:108  'Frankfurt am Main' | pred LOCATION         91:108  'Frankfurt am Main'
+TP      TELEFON     118:134  '+49 176 77889900' | pred PHONE_NUMBER    118:134  '+49 176 77889900'
+TP      E_MAIL      143:166  'daniel.weber@webmail.de' | pred EMAIL_ADDRESS   143:166  'daniel.weber@webmail.de'
+TP      DATUM       189:196  '07/2021' | pred DATE_TIME       189:196  '07/2021'
+TP      ORG         226:242  'DataSystems GmbH' | pred ORGANIZATION    226:242  'DataSystems GmbH'
+TP      LOC         244:253  'Frankfurt' | pred LOCATION        244:253  'Frankfurt'
+FN      DATUM       377:384  '03/2017'
+FP      PHONE_NUMBER  377:394  '03/2017 – 06/2021'
+FN      DATUM       387:394  '06/2021'
+TP      ORG         412:427  'NetSolutions AG' | pred ORGANIZATION    412:427  'NetSolutions AG'
+TP      LOC         429:438  'Wiesbaden' | pred LOCATION        429:438  'Wiesbaden'
+FN      DATUM       451:458  '10/2012'
+FP      PHONE_NUMBER  454:468  '2012 – 02/2017'
+FN      DATUM       461:468  '02/2017'
+FP      URL         469:473  'B.Sc'
+TP      ORG         486:518  'Technische Universität Darmstadt' | pred ORGANIZATION    486:518  'Technische Universität Darmstadt'
+FP      ORGANIZATION  542:545  'AWS'
+
+======================================================================
+DATASET: Dataset_14
+DOMAIN: HR-Dokumente
+
+POLICY exact_match
+TP=10 FP=4 FN=5 | P=0.714 R=0.667 F1=0.690
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER           8:22   'Maria Hoffmann'
+STRASSE      23:39   'Bahnhofstraße 17'
+PLZ          40:45   '48143'
+LOC          46:53   'Münster'
+E_MAIL       54:77   'maria.hoffmann@email.de'
+TELEFON      85:101  '+49 152 33445566'
+DATUM       113:123  '27.04.1996'
+DATUM       247:254  '02/2022'
+ORG         264:285  'TechFlow Solutions AG'
+LOC         287:294  'Münster'
+DATUM       432:439  '09/2019'
+DATUM       442:449  '01/2022'
+ORG         451:462  'CoreIT GmbH'
+LOC         464:472  'Dortmund'
+ORG         534:553  'Universität Münster'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER           8:22   'Maria Hoffmann' | pred PERSON            8:22   'Maria Hoffmann'
+FP/FN   STRASSE      23:39   'Bahnhofstraße 17' | pred LOCATION         23:36   'Bahnhofstraße'
+FN      PLZ          40:45   '48143'
+TP      LOC          46:53   'Münster' | pred LOCATION         46:53   'Münster'
+TP      E_MAIL       54:77   'maria.hoffmann@email.de' | pred EMAIL_ADDRESS    54:77   'maria.hoffmann@email.de'
+TP      TELEFON      85:101  '+49 152 33445566' | pred PHONE_NUMBER     85:101  '+49 152 33445566'
+TP      DATUM       113:123  '27.04.1996' | pred DATE_TIME       113:123  '27.04.1996'
+TP      DATUM       247:254  '02/2022' | pred DATE_TIME       247:254  '02/2022'
+TP      ORG         264:285  'TechFlow Solutions AG' | pred ORGANIZATION    264:285  'TechFlow Solutions AG'
+TP      LOC         287:294  'Münster' | pred LOCATION        287:294  'Münster'
+FP      PHONE_NUMBER  431:449  '(09/2019 – 01/2022'
+FN      DATUM       432:439  '09/2019'
+FN      DATUM       442:449  '01/2022'
+TP      ORG         451:462  'CoreIT GmbH' | pred ORGANIZATION    451:462  'CoreIT GmbH'
+TP      LOC         464:472  'Dortmund' | pred LOCATION        464:472  'Dortmund'
+FP      URL         499:503  'M.Sc'
+FN      ORG         534:553  'Universität Münster'
+FP      LOCATION    546:553  'Münster'
+
+======================================================================
+DATASET: Dataset_15
+DOMAIN: HR-Dokumente
+
+POLICY exact_match
+TP=13 FP=2 FN=3 | P=0.867 R=0.812 F1=0.839
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER          12:23   'Lukas Meier'
+PER         157:168  'Lukas Meier'
+DATUM       181:191  '18.02.1994'
+LOC         195:203  'Nürnberg'
+STRASSE     213:224  'Lindenweg 8'
+PLZ         226:231  '90402'
+LOC         232:240  'Nürnberg'
+TELEFON     249:262  '0171 99887766'
+E_MAIL      271:294  'lukas.meier@postmail.de'
+DATUM       324:331  '04/2021'
+ORG         374:387  'SoftTech GmbH'
+LOC         391:399  'Nürnberg'
+DATUM       419:426  '01/2019'
+DATUM       431:438  '03/2021'
+ORG         447:461  'ByteFactory AG'
+ORG         530:561  'Friedrich-Alexander-Universität' | ALT: 530:579 'Friedrich-Alexander-Universität Erlangen-Nürnberg' OR 550:579 'Universität Erlangen-Nürnberg'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER          12:23   'Lukas Meier' | pred PERSON           12:23   'Lukas Meier'
+TP      PER         157:168  'Lukas Meier' | pred PERSON          157:168  'Lukas Meier'
+TP      DATUM       181:191  '18.02.1994' | pred DATE_TIME       181:191  '18.02.1994'
+TP      LOC         195:203  'Nürnberg' | pred LOCATION        195:203  'Nürnberg'
+FP/FN   STRASSE     213:224  'Lindenweg 8' | pred LOCATION        213:222  'Lindenweg'
+FN      PLZ         226:231  '90402'
+TP      LOC         232:240  'Nürnberg' | pred LOCATION        232:240  'Nürnberg'
+FN      TELEFON     249:262  '0171 99887766'
+TP      E_MAIL      271:294  'lukas.meier@postmail.de' | pred EMAIL_ADDRESS   271:294  'lukas.meier@postmail.de'
+TP      DATUM       324:331  '04/2021' | pred DATE_TIME       324:331  '04/2021'
+TP      ORG         374:387  'SoftTech GmbH' | pred ORGANIZATION    374:387  'SoftTech GmbH'
+TP      LOC         391:399  'Nürnberg' | pred LOCATION        391:399  'Nürnberg'
+TP      DATUM       419:426  '01/2019' | pred DATE_TIME       419:426  '01/2019'
+TP      DATUM       431:438  '03/2021' | pred DATE_TIME       431:438  '03/2021'
+TP      ORG         447:461  'ByteFactory AG' | pred ORGANIZATION    447:461  'ByteFactory AG'
+FP      URL         501:505  'B.Sc'
+TP      ORG         530:579  'Friedrich-Alexander-Universität Erlangen-Nürnberg' | pred ORGANIZATION    530:579  'Friedrich-Alexander-Universität Erlangen-Nürnberg'
+
+======================================================================
+DATASET: Dataset_16
+DOMAIN: HR-Dokumente
+
+POLICY exact_match
+TP=8 FP=3 FN=4 | P=0.727 R=0.667 F1=0.696
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER           9:20   'Sarah Klein'
+E_MAIL       31:53   'sarah.klein@mailbox.de'
+TELEFON      56:72   '+49 157 22334455'
+PLZ          85:90   '50667'
+LOC          91:95   'Köln'
+DATUM       109:119  '03.11.1992'
+ORG         163:192  'DoubleSlash Net-Business GmbH'
+LOC         194:209  'Friedrichshafen'
+ORG         239:252  'MarketView AG'
+DATUM       254:261  '03/2017'
+DATUM       262:269  '02/2019'
+ORG         423:439  'Universität Köln'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER           9:20   'Sarah Klein' | pred PERSON            9:20   'Sarah Klein'
+TP      E_MAIL       31:53   'sarah.klein@mailbox.de' | pred EMAIL_ADDRESS    31:53   'sarah.klein@mailbox.de'
+TP      TELEFON      56:72   '+49 157 22334455' | pred PHONE_NUMBER     56:72   '+49 157 22334455'
+FN      PLZ          85:90   '50667'
+TP      LOC          91:95   'Köln' | pred LOCATION         91:95   'Köln'
+TP      DATUM       109:119  '03.11.1992' | pred DATE_TIME       109:119  '03.11.1992'
+TP      ORG         163:192  'DoubleSlash Net-Business GmbH' | pred ORGANIZATION    163:192  'DoubleSlash Net-Business GmbH'
+TP      LOC         194:209  'Friedrichshafen' | pred LOCATION        194:209  'Friedrichshafen'
+TP      ORG         239:252  'MarketView AG' | pred ORGANIZATION    239:252  'MarketView AG'
+FP      PHONE_NUMBER  253:269  '(03/2017–02/2019'
+FN      DATUM       254:261  '03/2017'
+FN      DATUM       262:269  '02/2019'
+FN      ORG         423:439  'Universität Köln'
+FP      LOCATION    435:439  'Köln'
+FP      ORGANIZATION  468:484  'Google Analytics'
+
+======================================================================
+DATASET: Dataset_17
+DOMAIN: HR-Dokumente
+
+POLICY exact_match
+TP=10 FP=0 FN=0 | P=1.000 R=1.000 F1=1.000
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER          21:34   'Thomas Berger'
+E_MAIL       50:77   'thomas.berger@bewerbung.net'
+DATUM        81:91   '04.02.2024'
+TELEFON     115:128  '0160 44556677'
+ORG         162:177  'DeltaLogix GmbH'
+ORG         246:257  'NetPoint AG'
+DATUM       282:292  '21.08.1990'
+LOC         306:313  'Leipzig'
+ORG         306:313  'Leipzig' | ALT: 440:458 'Hochschule Leipzig'
+ORG         369:392  'TechCore Solutions GmbH'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER          21:34   'Thomas Berger' | pred PERSON           21:34   'Thomas Berger'
+TP      E_MAIL       50:77   'thomas.berger@bewerbung.net' | pred EMAIL_ADDRESS    50:77   'thomas.berger@bewerbung.net'
+TP      DATUM        81:91   '04.02.2024' | pred DATE_TIME        81:91   '04.02.2024'
+TP      TELEFON     115:128  '0160 44556677' | pred PHONE_NUMBER    115:128  '0160 44556677'
+TP      ORG         162:177  'DeltaLogix GmbH' | pred ORGANIZATION    162:177  'DeltaLogix GmbH'
+TP      ORG         246:257  'NetPoint AG' | pred ORGANIZATION    246:257  'NetPoint AG'
+TP      DATUM       282:292  '21.08.1990' | pred DATE_TIME       282:292  '21.08.1990'
+TP      LOC         306:313  'Leipzig' | pred LOCATION        306:313  'Leipzig'
+TP      ORG         369:392  'TechCore Solutions GmbH' | pred ORGANIZATION    369:392  'TechCore Solutions GmbH'
+TP      ORG         440:458  'Hochschule Leipzig' | pred ORGANIZATION    440:458  'Hochschule Leipzig'
+
+======================================================================
+DATASET: Dataset_18
+DOMAIN: HR-Dokumente
+
+POLICY exact_match
+TP=12 FP=1 FN=1 | P=0.923 R=0.923 F1=0.923
+
+TARGET LABELS
+----------------------------------------------------------------------
+E_MAIL       44:66   'hr@company-internal.de'
+DATUM        74:84   '12.01.2024'
+PER         136:152  'Katharina Sommer'
+E_MAIL      154:178  'k.sommer@private-mail.de'
+PLZ         194:199  '70563'
+LOC         200:209  'Stuttgart'
+DATUM       246:253  '04/2018'
+DATUM       258:265  '06/2023'
+ORG         270:287  'AnalyticsPro GmbH'
+ORG         424:439  'Universität Ulm' | ALT: 436:439 'Ulm'
+TELEFON     471:484  '0151 66778899'
+PER         589:601  'Markus Klein'
+ORG         606:620  'DataConsult AG'
+
+EVALUATION
+----------------------------------------------------------------------
+FP      ORGANIZATION    0:2    'FW'
+TP      E_MAIL       44:66   'hr@company-internal.de' | pred EMAIL_ADDRESS    44:66   'hr@company-internal.de'
+TP      DATUM        74:84   '12.01.2024' | pred DATE_TIME        74:84   '12.01.2024'
+TP      PER         136:152  'Katharina Sommer' | pred PERSON          136:152  'Katharina Sommer'
+TP      E_MAIL      154:178  'k.sommer@private-mail.de' | pred EMAIL_ADDRESS   154:178  'k.sommer@private-mail.de'
+FN      PLZ         194:199  '70563'
+TP      LOC         200:209  'Stuttgart' | pred LOCATION        200:209  'Stuttgart'
+TP      DATUM       246:253  '04/2018' | pred DATE_TIME       246:253  '04/2018'
+TP      DATUM       258:265  '06/2023' | pred DATE_TIME       258:265  '06/2023'
+TP      ORG         270:287  'AnalyticsPro GmbH' | pred ORGANIZATION    270:287  'AnalyticsPro GmbH'
+TP      ORG         424:439  'Universität Ulm' | pred ORGANIZATION    424:439  'Universität Ulm'
+TP      TELEFON     471:484  '0151 66778899' | pred PHONE_NUMBER    471:484  '0151 66778899'
+TP      PER         589:601  'Markus Klein' | pred PERSON          589:601  'Markus Klein'
+TP      ORG         606:620  'DataConsult AG' | pred ORGANIZATION    606:620  'DataConsult AG'
+
+======================================================================
+DATASET: Dataset_19
+DOMAIN: Verträge
+
+POLICY exact_match
+TP=10 FP=4 FN=7 | P=0.714 R=0.588 F1=0.645
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER          31:50   'Frau Sabine Lehmann' | ALT: 36:50 'Sabine Lehmann'
+STRASSE      51:66   'Uhlandstraße 19'
+PLZ          67:72   '70182'
+LOC          73:82   'Stuttgart'
+PER         118:137  'Herrn Tobias Kruger' | ALT: 124:137 'Tobias Kruger'
+STRASSE     138:151  'Hegelstraße 7'
+PLZ         152:157  '70174'
+LOC         158:167  'Stuttgart'
+STRASSE     274:287  'Hegelstraße 7'
+PLZ         289:294  '70174'
+LOC         295:304  'Stuttgart'
+DATUM       528:538  '01.04.2025'
+IBAN       1010:1037 'DE91 6005 0101 2345 6789 01'
+LOC        1505:1514 'Stuttgart'
+DATUM      1520:1530 '12.03.2025'
+PER        1560:1574 'Sabine Lehmann'
+PER        1603:1616 'Tobias Kruger'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER          36:50   'Sabine Lehmann' | pred PERSON           36:50   'Sabine Lehmann'
+FP/FN   STRASSE      51:66   'Uhlandstraße 19' | pred LOCATION         51:63   'Uhlandstraße'
+FN      PLZ          67:72   '70182'
+TP      LOC          73:82   'Stuttgart' | pred LOCATION         73:82   'Stuttgart'
+TP      PER         124:137  'Tobias Kruger' | pred PERSON          124:137  'Tobias Kruger'
+FP/FN   STRASSE     138:151  'Hegelstraße 7' | pred LOCATION        138:149  'Hegelstraße'
+FN      PLZ         152:157  '70174'
+TP      LOC         158:167  'Stuttgart' | pred LOCATION        158:167  'Stuttgart'
+FP/FN   STRASSE     274:287  'Hegelstraße 7' | pred LOCATION        274:285  'Hegelstraße'
+FN      PLZ         289:294  '70174'
+TP      LOC         295:304  'Stuttgart' | pred LOCATION        295:304  'Stuttgart'
+TP      DATUM       528:538  '01.04.2025' | pred DATE_TIME       528:538  '01.04.2025'
+FN      IBAN       1010:1037 'DE91 6005 0101 2345 6789 01'
+FP      ORGANIZATION 1043:1054 'SOLADEST600'
+TP      LOC        1505:1514 'Stuttgart' | pred LOCATION       1505:1514 'Stuttgart'
+TP      DATUM      1520:1530 '12.03.2025' | pred DATE_TIME      1520:1530 '12.03.2025'
+TP      PER        1560:1574 'Sabine Lehmann' | pred PERSON         1560:1574 'Sabine Lehmann'
+TP      PER        1603:1616 'Tobias Kruger' | pred PERSON         1603:1616 'Tobias Kruger'
+
+======================================================================
+DATASET: Dataset_20
+DOMAIN: Verträge
+
+POLICY exact_match
+TP=13 FP=3 FN=6 | P=0.812 R=0.684 F1=0.743
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG          30:52   'Linden Immobilien GmbH'
+STRASSE      53:67   'Konigstraße 11'
+PLZ          68:73   '70173'
+LOC          74:83   'Stuttgart'
+PER         121:139  'Herrn Markus Dietz' | ALT: 127:139 'Markus Dietz'
+ORG         146:163  'Urban Coffee GmbH'
+STRASSE     164:182  'Tubinger Straße 42'
+PLZ         183:188  '70178'
+LOC         189:198  'Stuttgart'
+PER         238:254  'Frau Julia Maier' | ALT: 243:254 'Julia Maier'
+STRASSE     383:397  'Konigstraße 11'
+PLZ         399:404  '70173'
+LOC         405:414  'Stuttgart'
+DATUM       531:541  '01.07.2025'
+LOC        1438:1447 'Stuttgart'
+LOC        1450:1459 'Stuttgart'
+DATUM      1465:1475 '15.04.2025'
+ORG        1507:1529 'Linden Immobilien GmbH'
+ORG        1560:1577 'Urban Coffee GmbH'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG          30:52   'Linden Immobilien GmbH' | pred ORGANIZATION     30:52   'Linden Immobilien GmbH'
+FP/FN   STRASSE      53:67   'Konigstraße 11' | pred LOCATION         53:64   'Konigstraße'
+FN      PLZ          68:73   '70173'
+TP      LOC          74:83   'Stuttgart' | pred LOCATION         74:83   'Stuttgart'
+TP      PER         127:139  'Markus Dietz' | pred PERSON          127:139  'Markus Dietz'
+TP      ORG         146:163  'Urban Coffee GmbH' | pred ORGANIZATION    146:163  'Urban Coffee GmbH'
+FP/FN   STRASSE     164:182  'Tubinger Straße 42' | pred LOCATION        164:179  'Tubinger Straße'
+FN      PLZ         183:188  '70178'
+TP      LOC         189:198  'Stuttgart' | pred LOCATION        189:198  'Stuttgart'
+TP      PER         243:254  'Julia Maier' | pred PERSON          243:254  'Julia Maier'
+FP/FN   STRASSE     383:397  'Konigstraße 11' | pred LOCATION        383:394  'Konigstraße'
+FN      PLZ         399:404  '70173'
+TP      LOC         405:414  'Stuttgart' | pred LOCATION        405:414  'Stuttgart'
+TP      DATUM       531:541  '01.07.2025' | pred DATE_TIME       531:541  '01.07.2025'
+TP      LOC        1438:1447 'Stuttgart' | pred LOCATION       1438:1447 'Stuttgart'
+TP      LOC        1450:1459 'Stuttgart' | pred LOCATION       1450:1459 'Stuttgart'
+TP      DATUM      1465:1475 '15.04.2025' | pred DATE_TIME      1465:1475 '15.04.2025'
+TP      ORG        1507:1529 'Linden Immobilien GmbH' | pred ORGANIZATION   1507:1529 'Linden Immobilien GmbH'
+TP      ORG        1560:1577 'Urban Coffee GmbH' | pred ORGANIZATION   1560:1577 'Urban Coffee GmbH'
+
+======================================================================
+DATASET: Dataset_21
+DOMAIN: Verträge
+
+POLICY exact_match
+TP=13 FP=2 FN=4 | P=0.867 R=0.765 F1=0.812
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER          22:40   'Herrn Lukas Berger' | ALT: 28:40 'Lukas Berger'
+STRASSE      58:70   'Talstraße 14'
+PLZ          72:77   '70190'
+LOC          78:87   'Stuttgart'
+PER          93:110  'Frau Nina Hofmann' | ALT: 98:110 'Nina Hofmann'
+STRASSE     128:146  'Reinsburgstraße 62'
+PLZ         148:153  '70178'
+LOC         154:163  'Stuttgart'
+PER         206:217  'Herr Berger' | ALT: 211:217 'Berger'
+PER         230:242  'Frau Hofmann' | ALT: 235:242 'Hofmann'
+ORG         260:265  'Apple'
+DATUM       989:999  '20.04.2025'
+LOC        1003:1012 'Stuttgart'
+LOC        1015:1024 'Stuttgart'
+DATUM      1030:1040 '20.04.2025'
+PER        1045:1057 'Lukas Berger'
+PER        1062:1074 'Nina Hofmann'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER          28:40   'Lukas Berger' | pred PERSON           28:40   'Lukas Berger'
+FP/FN   STRASSE      58:70   'Talstraße 14' | pred LOCATION         58:67   'Talstraße'
+FN      PLZ          72:77   '70190'
+TP      LOC          78:87   'Stuttgart' | pred LOCATION         78:87   'Stuttgart'
+TP      PER          98:110  'Nina Hofmann' | pred PERSON           98:110  'Nina Hofmann'
+FP/FN   STRASSE     128:146  'Reinsburgstraße 62' | pred LOCATION        128:143  'Reinsburgstraße'
+FN      PLZ         148:153  '70178'
+TP      LOC         154:163  'Stuttgart' | pred LOCATION        154:163  'Stuttgart'
+TP      PER         211:217  'Berger' | pred PERSON          211:217  'Berger'
+TP      PER         235:242  'Hofmann' | pred PERSON          235:242  'Hofmann'
+TP      ORG         260:265  'Apple' | pred ORGANIZATION    260:265  'Apple'
+TP      DATUM       989:999  '20.04.2025' | pred DATE_TIME       989:999  '20.04.2025'
+TP      LOC        1003:1012 'Stuttgart' | pred LOCATION       1003:1012 'Stuttgart'
+TP      LOC        1015:1024 'Stuttgart' | pred LOCATION       1015:1024 'Stuttgart'
+TP      DATUM      1030:1040 '20.04.2025' | pred DATE_TIME      1030:1040 '20.04.2025'
+TP      PER        1045:1057 'Lukas Berger' | pred PERSON         1045:1057 'Lukas Berger'
+TP      PER        1062:1074 'Nina Hofmann' | pred PERSON         1062:1074 'Nina Hofmann'
+
+======================================================================
+DATASET: Dataset_22
+DOMAIN: Verträge
+
+POLICY exact_match
+TP=12 FP=2 FN=4 | P=0.857 R=0.750 F1=0.800
+
+TARGET LABELS
+----------------------------------------------------------------------
+PER          22:44   'Frau Katharina Schmitt' | ALT: 27:44 'Katharina Schmitt'
+STRASSE      62:79   'Augustenstraße 33'
+PLZ          81:86   '80333'
+LOC          87:94   'München'
+PER         100:117  'Herrn Daniel Roth' | ALT: 106:117 'Daniel Roth'
+STRASSE     135:153  'Lindwurmstraße 115'
+PLZ         155:160  '80337'
+LOC         161:168  'München'
+PER         207:219  'Frau Schmitt' | ALT: 212:219 'Schmitt'
+PER         232:242  'Herrn Roth' | ALT: 238:242 'Roth'
+DATUM       939:949  '05.05.2025'
+LOC         953:960  'München'
+LOC         969:976  'München'
+DATUM       982:992  '05.05.2025'
+PER         997:1014 'Katharina Schmitt'
+PER        1019:1030 'Daniel Roth'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      PER          27:44   'Katharina Schmitt' | pred PERSON           27:44   'Katharina Schmitt'
+FP/FN   STRASSE      62:79   'Augustenstraße 33' | pred LOCATION         62:76   'Augustenstraße'
+FN      PLZ          81:86   '80333'
+TP      LOC          87:94   'München' | pred LOCATION         87:94   'München'
+TP      PER         106:117  'Daniel Roth' | pred PERSON          106:117  'Daniel Roth'
+FP/FN   STRASSE     135:153  'Lindwurmstraße 115' | pred LOCATION        135:149  'Lindwurmstraße'
+FN      PLZ         155:160  '80337'
+TP      LOC         161:168  'München' | pred LOCATION        161:168  'München'
+TP      PER         212:219  'Schmitt' | pred PERSON          212:219  'Schmitt'
+TP      PER         238:242  'Roth' | pred PERSON          238:242  'Roth'
+TP      DATUM       939:949  '05.05.2025' | pred DATE_TIME       939:949  '05.05.2025'
+TP      LOC         953:960  'München' | pred LOCATION        953:960  'München'
+TP      LOC         969:976  'München' | pred LOCATION        969:976  'München'
+TP      DATUM       982:992  '05.05.2025' | pred DATE_TIME       982:992  '05.05.2025'
+TP      PER         997:1014 'Katharina Schmitt' | pred PERSON          997:1014 'Katharina Schmitt'
+TP      PER        1019:1030 'Daniel Roth' | pred PERSON         1019:1030 'Daniel Roth'
+
+======================================================================
+DATASET: Dataset_23
+DOMAIN: Verträge
+
+POLICY exact_match
+TP=10 FP=2 FN=4 | P=0.833 R=0.714 F1=0.769
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG          29:53   'Bergmann IT-Systeme GmbH'
+STRASSE      55:69   'Königstraße 45'
+PLZ          71:76   '70173'
+LOC          77:86   'Stuttgart'
+PER         120:140  'Frau Laura Schneider' | ALT: 125:140 'Laura Schneider'
+STRASSE     142:160  'Rotebühlstraße 112'
+PLZ         162:167  '70178'
+LOC         168:177  'Stuttgart'
+DATUM       287:297  '01.05.2025'
+LOC        2696:2722 'Bundesrepublik Deutschland'
+LOC        2725:2734 'Stuttgart'
+DATUM      2740:2750 '18.03.2025'
+ORG        2755:2779 'Bergmann IT-Systeme GmbH'
+PER        2784:2799 'Laura Schneider'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG          29:53   'Bergmann IT-Systeme GmbH' | pred ORGANIZATION     29:53   'Bergmann IT-Systeme GmbH'
+FP/FN   STRASSE      55:69   'Königstraße 45' | pred LOCATION         55:66   'Königstraße'
+FN      PLZ          71:76   '70173'
+TP      LOC          77:86   'Stuttgart' | pred LOCATION         77:86   'Stuttgart'
+TP      PER         125:140  'Laura Schneider' | pred PERSON          125:140  'Laura Schneider'
+FP/FN   STRASSE     142:160  'Rotebühlstraße 112' | pred LOCATION        142:156  'Rotebühlstraße'
+FN      PLZ         162:167  '70178'
+TP      LOC         168:177  'Stuttgart' | pred LOCATION        168:177  'Stuttgart'
+TP      DATUM       287:297  '01.05.2025' | pred DATE_TIME       287:297  '01.05.2025'
+TP      LOC        2696:2722 'Bundesrepublik Deutschland' | pred LOCATION       2696:2722 'Bundesrepublik Deutschland'
+TP      LOC        2725:2734 'Stuttgart' | pred LOCATION       2725:2734 'Stuttgart'
+TP      DATUM      2740:2750 '18.03.2025' | pred DATE_TIME      2740:2750 '18.03.2025'
+TP      ORG        2755:2779 'Bergmann IT-Systeme GmbH' | pred ORGANIZATION   2755:2779 'Bergmann IT-Systeme GmbH'
+TP      PER        2784:2799 'Laura Schneider' | pred PERSON         2784:2799 'Laura Schneider'
+
+======================================================================
+DATASET: Dataset_24
+DOMAIN: Verträge
+
+POLICY exact_match
+TP=12 FP=2 FN=4 | P=0.857 R=0.750 F1=0.800
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG          29:58   'Hansen & Reuter Logistik GmbH'
+STRASSE      60:78   'Industriestraße 18'
+PLZ          80:85   '70469'
+LOC          86:95   'Stuttgart'
+PER         133:146  'Markus Hansen'
+PER         179:196  'Herrn Jonas Weber' | ALT: 185:196 'Jonas Weber'
+STRASSE     198:216  'Schönbühlstraße 27'
+PLZ         218:223  '70188'
+LOC         224:233  'Stuttgart'
+PER         307:317  'Herr Weber' | ALT: 312:317 'Weber'
+DATUM       330:340  '01.06.2025'
+LOC        3012:3038 'Bundesrepublik Deutschland'
+LOC        3041:3050 'Stuttgart'
+DATUM      3056:3066 '22.04.2025'
+ORG        3071:3100 'Hansen & Reuter Logistik GmbH'
+PER        3105:3116 'Jonas Weber'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG          29:58   'Hansen & Reuter Logistik GmbH' | pred ORGANIZATION     29:58   'Hansen & Reuter Logistik GmbH'
+FP/FN   STRASSE      60:78   'Industriestraße 18' | pred LOCATION         60:75   'Industriestraße'
+FN      PLZ          80:85   '70469'
+TP      LOC          86:95   'Stuttgart' | pred LOCATION         86:95   'Stuttgart'
+TP      PER         133:146  'Markus Hansen' | pred PERSON          133:146  'Markus Hansen'
+TP      PER         185:196  'Jonas Weber' | pred PERSON          185:196  'Jonas Weber'
+FP/FN   STRASSE     198:216  'Schönbühlstraße 27' | pred LOCATION        198:213  'Schönbühlstraße'
+FN      PLZ         218:223  '70188'
+TP      LOC         224:233  'Stuttgart' | pred LOCATION        224:233  'Stuttgart'
+TP      PER         312:317  'Weber' | pred PERSON          312:317  'Weber'
+TP      DATUM       330:340  '01.06.2025' | pred DATE_TIME       330:340  '01.06.2025'
+TP      LOC        3012:3038 'Bundesrepublik Deutschland' | pred LOCATION       3012:3038 'Bundesrepublik Deutschland'
+TP      LOC        3041:3050 'Stuttgart' | pred LOCATION       3041:3050 'Stuttgart'
+TP      DATUM      3056:3066 '22.04.2025' | pred DATE_TIME      3056:3066 '22.04.2025'
+TP      ORG        3071:3100 'Hansen & Reuter Logistik GmbH' | pred ORGANIZATION   3071:3100 'Hansen & Reuter Logistik GmbH'
+TP      PER        3105:3116 'Jonas Weber' | pred PERSON         3105:3116 'Jonas Weber'
+
+======================================================================
+DATASET: Dataset_25
+DOMAIN: Chats
+
+POLICY exact_match
+TP=12 FP=4 FN=3 | P=0.750 R=0.800 F1=0.774
+
+TARGET LABELS
+----------------------------------------------------------------------
+LOC          60:69   'Stuttgart'
+URL         102:123  'vpn01.firma-intern.de'
+PER         133:145  'Markus Vogel'
+E_MAIL      157:178  'markus.vogel@firma.de'
+TELEFON     185:197  '0711 4587321'
+STRASSE     341:359  'Tübinger Straße 54'
+PER         370:385  'Julia Schneider'
+PER         404:415  'Herr Vogel' | ALT: 409:415 'Vogel'
+PER         469:481  'Markus Vogel'
+PER         550:565  'Julia Schneider'
+IP_ADRESSE  615:627  '84.167.23.91'
+PER         700:712  'Markus Vogel'
+PER         753:768  'Julia Schneider'
+PER         932:947  'Julia Schneider'
+DATUM       955:965  '12.05.2025'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      LOC          60:69   'Stuttgart' | pred LOCATION         60:69   'Stuttgart'
+TP      URL         102:123  'vpn01.firma-intern.de' | pred URL             102:123  'vpn01.firma-intern.de'
+TP      PER         133:145  'Markus Vogel' | pred PERSON          133:145  'Markus Vogel'
+TP      E_MAIL      157:178  'markus.vogel@firma.de' | pred EMAIL_ADDRESS   157:178  'markus.vogel@firma.de'
+TP      TELEFON     185:197  '0711 4587321' | pred PHONE_NUMBER    185:197  '0711 4587321'
+FP/FN   STRASSE     341:359  'Tübinger Straße 54' | pred LOCATION        341:356  'Tübinger Straße'
+TP      PER         370:385  'Julia Schneider' | pred PERSON          370:385  'Julia Schneider'
+FP/FN   PER         404:415  'Herr Vogel' | pred PERSON          411:416  'Vogel'
+TP      PER         469:481  'Markus Vogel' | pred PERSON          469:481  'Markus Vogel'
+TP      PER         550:565  'Julia Schneider' | pred PERSON          550:565  'Julia Schneider'
+FN      IP_ADRESSE  615:627  '84.167.23.91'
+TP      PER         700:712  'Markus Vogel' | pred PERSON          700:712  'Markus Vogel'
+TP      PER         753:768  'Julia Schneider' | pred PERSON          753:768  'Julia Schneider'
+FP      ORGANIZATION  807:813  'mvogel'
+FP      ORGANIZATION  815:831  'Active Directory'
+TP      PER         932:947  'Julia Schneider' | pred PERSON          932:947  'Julia Schneider'
+TP      DATUM       955:965  '12.05.2025' | pred DATE_TIME       955:965  '12.05.2025'
+
+======================================================================
+DATASET: Dataset_26
+DOMAIN: Chats
+
+POLICY exact_match
+TP=13 FP=1 FN=1 | P=0.929 R=0.929 F1=0.929
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG          37:55   'TechSolutions GmbH'
+PER          72:84   'Andreas Kühn'
+PER          94:106  'Andreas Kühn'
+E_MAIL      108:138  'andreas.kuehn@techsolutions.de'
+PER         173:184  'Sabine Roth'
+PER         234:245  'Sabine Roth'
+URL         426:456  'erp-test01.techsolutions.local'
+PER         467:479  'Daniel Meier'
+PER         614:625  'Sabine Roth'
+PER         711:723  'Andreas Kühn'
+DATUM       757:767  '30.06.2025'
+PER         862:874  'Daniel Meier'
+PER         920:931  'Sabine Roth'
+PER         963:975  'Andreas Kühn'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG          37:55   'TechSolutions GmbH' | pred ORGANIZATION     37:55   'TechSolutions GmbH'
+TP      PER          72:84   'Andreas Kühn' | pred PERSON           72:84   'Andreas Kühn'
+TP      PER          94:106  'Andreas Kühn' | pred PERSON           94:106  'Andreas Kühn'
+TP      E_MAIL      108:138  'andreas.kuehn@techsolutions.de' | pred EMAIL_ADDRESS   108:138  'andreas.kuehn@techsolutions.de'
+TP      PER         173:184  'Sabine Roth' | pred PERSON          173:184  'Sabine Roth'
+TP      PER         234:245  'Sabine Roth' | pred PERSON          234:245  'Sabine Roth'
+FP/FN   URL         426:456  'erp-test01.techsolutions.local' | pred URL             426:441  'erp-test01.tech'
+TP      PER         467:479  'Daniel Meier' | pred PERSON          467:479  'Daniel Meier'
+TP      PER         614:625  'Sabine Roth' | pred PERSON          614:625  'Sabine Roth'
+TP      PER         711:723  'Andreas Kühn' | pred PERSON          711:723  'Andreas Kühn'
+TP      DATUM       757:767  '30.06.2025' | pred DATE_TIME       757:767  '30.06.2025'
+TP      PER         862:874  'Daniel Meier' | pred PERSON          862:874  'Daniel Meier'
+TP      PER         920:931  'Sabine Roth' | pred PERSON          920:931  'Sabine Roth'
+TP      PER         963:975  'Andreas Kühn' | pred PERSON          963:975  'Andreas Kühn'
+
+======================================================================
+DATASET: Dataset_27
+DOMAIN: Chats
+
+POLICY exact_match
+TP=19 FP=1 FN=2 | P=0.950 R=0.905 F1=0.927
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG          67:89   'NordCom Vertriebs GmbH'
+DATUM        97:107  '21.05.2025'
+PER         117:128  'Anna Keller'
+E_MAIL      130:152  'anna.keller@nordcom.de'
+ORG         244:265  'Bergmann Industrie AG'
+PER         345:360  'Lukas Reinhardt'
+STRASSE     401:415  'Hafenstraße 12'
+PLZ         417:422  '20457'
+LOC         423:430  'Hamburg'
+PER         459:475  'Michael Bergmann'
+PER         487:498  'M. Bergmann'
+PER         509:520  'Anna Keller'
+E_MAIL      573:611  'michael.bergmann@bergmann-industrie.de'
+PER         633:644  'Sophie Lang'
+E_MAIL      646:663  's.lang@nordcom.de'
+DATUM       759:769  '31.12.2025'
+PER         780:795  'Lukas Reinhardt'
+PER         875:886  'Anna Keller'
+PER        1034:1045 'Sophie Lang'
+PER        1131:1142 'Anna Keller'
+PER        1235:1249 'Thomas Neumann'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG          67:89   'NordCom Vertriebs GmbH' | pred ORGANIZATION     67:89   'NordCom Vertriebs GmbH'
+TP      DATUM        97:107  '21.05.2025' | pred DATE_TIME        97:107  '21.05.2025'
+TP      PER         117:128  'Anna Keller' | pred PERSON          117:128  'Anna Keller'
+TP      E_MAIL      130:152  'anna.keller@nordcom.de' | pred EMAIL_ADDRESS   130:152  'anna.keller@nordcom.de'
+TP      ORG         244:265  'Bergmann Industrie AG' | pred ORGANIZATION    244:265  'Bergmann Industrie AG'
+TP      PER         345:360  'Lukas Reinhardt' | pred PERSON          345:360  'Lukas Reinhardt'
+FP/FN   STRASSE     401:415  'Hafenstraße 12' | pred LOCATION        401:412  'Hafenstraße'
+FN      PLZ         417:422  '20457'
+TP      LOC         423:430  'Hamburg' | pred LOCATION        423:430  'Hamburg'
+TP      PER         459:475  'Michael Bergmann' | pred PERSON          459:475  'Michael Bergmann'
+TP      PER         487:498  'M. Bergmann' | pred PERSON          487:498  'M. Bergmann'
+TP      PER         509:520  'Anna Keller' | pred PERSON          509:520  'Anna Keller'
+TP      E_MAIL      573:611  'michael.bergmann@bergmann-industrie.de' | pred EMAIL_ADDRESS   573:611  'michael.bergmann@bergmann-industrie.de'
+TP      PER         633:644  'Sophie Lang' | pred PERSON          633:644  'Sophie Lang'
+TP      E_MAIL      646:663  's.lang@nordcom.de' | pred EMAIL_ADDRESS   646:663  's.lang@nordcom.de'
+TP      DATUM       759:769  '31.12.2025' | pred DATE_TIME       759:769  '31.12.2025'
+TP      PER         780:795  'Lukas Reinhardt' | pred PERSON          780:795  'Lukas Reinhardt'
+TP      PER         875:886  'Anna Keller' | pred PERSON          875:886  'Anna Keller'
+TP      PER        1034:1045 'Sophie Lang' | pred PERSON         1034:1045 'Sophie Lang'
+TP      PER        1131:1142 'Anna Keller' | pred PERSON         1131:1142 'Anna Keller'
+TP      PER        1235:1249 'Thomas Neumann' | pred PERSON         1235:1249 'Thomas Neumann'
+
+======================================================================
+DATASET: Dataset_28
+DOMAIN: Chats
+
+POLICY exact_match
+TP=21 FP=3 FN=3 | P=0.875 R=0.875 F1=0.875
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG          62:87   'Helion Manufacturing GmbH'
+DATUM        95:105  '04.06.2025'
+PER         115:128  'Miriam Scholz'
+E_MAIL      130:152  'm.scholz@helion-mfg.de'
+PER         189:203  'Daniel Fischer'
+DATUM       235:245  '01.03.2022'
+LOC         256:265  'Stuttgart'
+STRASSE     267:285  'Industriestraße 45'
+PER         296:308  'Robert Klein'
+LOC         341:348  'München'
+PER         359:372  'Miriam Scholz'
+DATUM       395:405  '01.07.2025'
+PER         483:495  'Robert Klein'
+PER         607:620  'Miriam Scholz'
+PER         710:722  'Robert Klein'
+STRASSE     752:765  'Rosenstraße 8'
+PLZ         767:772  '70182'
+LOC         773:782  'Stuttgart'
+PER         840:853  'Miriam Scholz'
+TELEFON     907:919  '0172 5566778'
+PER         947:959  'Robert Klein'
+PER         997:1010 'Sabine Köhler'
+PER        1040:1053 'Miriam Scholz'
+DATUM      1103:1113 '20.06.2025'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG          62:87   'Helion Manufacturing GmbH' | pred ORGANIZATION     62:87   'Helion Manufacturing GmbH'
+TP      DATUM        95:105  '04.06.2025' | pred DATE_TIME        95:105  '04.06.2025'
+TP      PER         115:128  'Miriam Scholz' | pred PERSON          115:128  'Miriam Scholz'
+TP      E_MAIL      130:152  'm.scholz@helion-mfg.de' | pred EMAIL_ADDRESS   130:152  'm.scholz@helion-mfg.de'
+TP      PER         189:203  'Daniel Fischer' | pred PERSON          189:203  'Daniel Fischer'
+TP      DATUM       235:245  '01.03.2022' | pred DATE_TIME       235:245  '01.03.2022'
+TP      LOC         256:265  'Stuttgart' | pred LOCATION        256:265  'Stuttgart'
+FP/FN   STRASSE     267:285  'Industriestraße 45' | pred LOCATION        267:282  'Industriestraße'
+TP      PER         296:308  'Robert Klein' | pred PERSON          296:308  'Robert Klein'
+TP      LOC         341:348  'München' | pred LOCATION        341:348  'München'
+TP      PER         359:372  'Miriam Scholz' | pred PERSON          359:372  'Miriam Scholz'
+TP      DATUM       395:405  '01.07.2025' | pred DATE_TIME       395:405  '01.07.2025'
+TP      PER         483:495  'Robert Klein' | pred PERSON          483:495  'Robert Klein'
+TP      PER         607:620  'Miriam Scholz' | pred PERSON          607:620  'Miriam Scholz'
+TP      PER         710:722  'Robert Klein' | pred PERSON          710:722  'Robert Klein'
+FP      PERSON      736:742  'Daniel'
+FP/FN   STRASSE     752:765  'Rosenstraße 8' | pred LOCATION        752:763  'Rosenstraße'
+FN      PLZ         767:772  '70182'
+TP      LOC         773:782  'Stuttgart' | pred LOCATION        773:782  'Stuttgart'
+TP      PER         840:853  'Miriam Scholz' | pred PERSON          840:853  'Miriam Scholz'
+TP      TELEFON     907:919  '0172 5566778' | pred PHONE_NUMBER    907:919  '0172 5566778'
+TP      PER         947:959  'Robert Klein' | pred PERSON          947:959  'Robert Klein'
+TP      PER         997:1010 'Sabine Köhler' | pred PERSON          997:1010 'Sabine Köhler'
+TP      PER        1040:1053 'Miriam Scholz' | pred PERSON         1040:1053 'Miriam Scholz'
+TP      DATUM      1103:1113 '20.06.2025' | pred DATE_TIME      1103:1113 '20.06.2025'
+
+======================================================================
+DATASET: Dataset_29
+DOMAIN: Chats
+
+POLICY exact_match
+TP=19 FP=3 FN=4 | P=0.864 R=0.826 F1=0.844
+
+TARGET LABELS
+----------------------------------------------------------------------
+ORG          43:53   'Spintex AG'
+DATUM        61:71   '16.05.2025'
+PER          81:92   'Laura Weber'
+E_MAIL       94:116  'laura.weber@spintex.de'
+URL         161:188  'report-fin-02.spintex.local'
+ORG         281:293  'Meyer Bau AG'
+PER         353:366  'Martin Keller'
+PER         429:440  'Laura Weber'
+LOC         464:471  'München'
+STRASSE     473:489  'Leopoldstraße 23'
+PER         526:539  'Martin Keller'
+URL         583:606  'db-fin-02.spintex.local'
+IP_ADRESSE  611:620  '10.0.4.22'
+PER         656:667  'Laura Weber'
+PER         709:721  'Stefan Braun'
+PER         773:786  'Martin Keller'
+DATUM       840:850  '14.05.2025'
+PER         891:902  'Laura Weber'
+PER         998:1010 'Thomas Meyer'
+PER        1021:1034 'Martin Keller'
+PER        1057:1070 'Oliver Brandt'
+PER        1108:1121 'Martin Keller'
+PER        1198:1209 'Laura Weber'
+
+EVALUATION
+----------------------------------------------------------------------
+TP      ORG          43:53   'Spintex AG' | pred ORGANIZATION     43:53   'Spintex AG'
+TP      DATUM        61:71   '16.05.2025' | pred DATE_TIME        61:71   '16.05.2025'
+TP      PER          81:92   'Laura Weber' | pred PERSON           81:92   'Laura Weber'
+TP      E_MAIL       94:116  'laura.weber@spintex.de' | pred EMAIL_ADDRESS    94:116  'laura.weber@spintex.de'
+FN      URL         161:188  'report-fin-02.spintex.local'
+FP      ORGANIZATION  161:188  'report-fin-02.spintex.local'
+TP      ORG         281:293  'Meyer Bau AG' | pred ORGANIZATION    281:293  'Meyer Bau AG'
+TP      PER         353:366  'Martin Keller' | pred PERSON          353:366  'Martin Keller'
+TP      PER         429:440  'Laura Weber' | pred PERSON          429:440  'Laura Weber'
+TP      LOC         464:471  'München' | pred LOCATION        464:471  'München'
+FP/FN   STRASSE     473:489  'Leopoldstraße 23' | pred LOCATION        473:486  'Leopoldstraße'
+TP      PER         526:539  'Martin Keller' | pred PERSON          526:539  'Martin Keller'
+FN      URL         583:606  'db-fin-02.spintex.local'
+FP      ORGANIZATION  583:606  'db-fin-02.spintex.local'
+FN      IP_ADRESSE  611:620  '10.0.4.22'
+TP      PER         656:667  'Laura Weber' | pred PERSON          656:667  'Laura Weber'
+TP      PER         709:721  'Stefan Braun' | pred PERSON          709:721  'Stefan Braun'
+TP      PER         773:786  'Martin Keller' | pred PERSON          773:786  'Martin Keller'
+TP      DATUM       840:850  '14.05.2025' | pred DATE_TIME       840:850  '14.05.2025'
+TP      PER         891:902  'Laura Weber' | pred PERSON          891:902  'Laura Weber'
+TP      PER         998:1010 'Thomas Meyer' | pred PERSON          998:1010 'Thomas Meyer'
+TP      PER        1021:1034 'Martin Keller' | pred PERSON         1021:1034 'Martin Keller'
+TP      PER        1057:1070 'Oliver Brandt' | pred PERSON         1057:1070 'Oliver Brandt'
+TP      PER        1108:1121 'Martin Keller' | pred PERSON         1108:1121 'Martin Keller'
+TP      PER        1198:1209 'Laura Weber' | pred PERSON         1198:1209 'Laura Weber'
+
+======================================================================
+DATASET: Dataset_30
+DOMAIN: Chats
+
+POLICY exact_match
+TP=21 FP=2 FN=1 | P=0.913 R=0.955 F1=0.933
+
+TARGET LABELS
+----------------------------------------------------------------------
+DATUM        85:95   '03.06.2025'
+PER         105:118  'Jana Hoffmann'
+E_MAIL      120:145  'jana.hoffmann@intralog.de'
+LOC         284:294  'Düsseldorf'
+STRASSE     296:314  'Speditionstraße 21'
+PER         325:338  'Markus Ritter'
+DATUM       366:376  '15.04.2025'
+PER         454:467  'Jana Hoffmann'
+PER         522:546  'Herrn Dr. Matthias König' | ALT: 528:546 'Dr. Matthias König' OR 532:546 'Matthias König'
+PER         663:676  'Markus Ritter'
+ORG         839:852  'TransLog GmbH'
+PER         863:876  'Jana Hoffmann'
+PER         947:960  'Thomas Berger'
+DATUM       985:995  '12.02.2024'
+PER        1006:1022 'Frau Elena Rossi' | ALT: 1011:1022 'Elena Rossi'
+PER        1043:1056 'Markus Ritter'
+ORG        1105:1113 'TransLog'
+PER        1142:1155 'Jana Hoffmann'
+PER        1277:1290 'Markus Ritter'
+PER        1398:1411 'Jana Hoffmann'
+PER        1437:1446 'Dr. König' | ALT: 1441:1446 'König'
+DATUM      1454:1464 '10.06.2025'
+
+EVALUATION
+----------------------------------------------------------------------
+FP      ORGANIZATION   28:44   'IntraLog Systems'
+TP      DATUM        85:95   '03.06.2025' | pred DATE_TIME        85:95   '03.06.2025'
+TP      PER         105:118  'Jana Hoffmann' | pred PERSON          105:118  'Jana Hoffmann'
+TP      E_MAIL      120:145  'jana.hoffmann@intralog.de' | pred EMAIL_ADDRESS   120:145  'jana.hoffmann@intralog.de'
+TP      LOC         284:294  'Düsseldorf' | pred LOCATION        284:294  'Düsseldorf'
+FP/FN   STRASSE     296:314  'Speditionstraße 21' | pred LOCATION        296:311  'Speditionstraße'
+TP      PER         325:338  'Markus Ritter' | pred PERSON          325:338  'Markus Ritter'
+TP      DATUM       366:376  '15.04.2025' | pred DATE_TIME       366:376  '15.04.2025'
+TP      PER         454:467  'Jana Hoffmann' | pred PERSON          454:467  'Jana Hoffmann'
+TP      PER         532:546  'Matthias König' | pred PERSON          532:546  'Matthias König'
+TP      PER         663:676  'Markus Ritter' | pred PERSON          663:676  'Markus Ritter'
+TP      ORG         839:852  'TransLog GmbH' | pred ORGANIZATION    839:852  'TransLog GmbH'
+TP      PER         863:876  'Jana Hoffmann' | pred PERSON          863:876  'Jana Hoffmann'
+TP      PER         947:960  'Thomas Berger' | pred PERSON          947:960  'Thomas Berger'
+TP      DATUM       985:995  '12.02.2024' | pred DATE_TIME       985:995  '12.02.2024'
+TP      PER        1011:1022 'Elena Rossi' | pred PERSON         1011:1022 'Elena Rossi'
+TP      PER        1043:1056 'Markus Ritter' | pred PERSON         1043:1056 'Markus Ritter'
+TP      ORG        1105:1113 'TransLog' | pred ORGANIZATION   1105:1113 'TransLog'
+TP      PER        1142:1155 'Jana Hoffmann' | pred PERSON         1142:1155 'Jana Hoffmann'
+TP      PER        1277:1290 'Markus Ritter' | pred PERSON         1277:1290 'Markus Ritter'
+TP      PER        1398:1411 'Jana Hoffmann' | pred PERSON         1398:1411 'Jana Hoffmann'
+TP      PER        1441:1446 'König' | pred PERSON         1441:1446 'König'
+TP      DATUM      1454:1464 '10.06.2025' | pred DATE_TIME      1454:1464 '10.06.2025'
+
+======================================================================
+
+GLOBAL SUMMARY (micro-averaged over all datasets)
+----------------------------------------------------------------------
+POLICY exact_match        | TP= 346 FP=  46 FN=  64 | P=0.883 R=0.844 F1=0.863
